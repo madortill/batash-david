@@ -1,5 +1,6 @@
 import React from 'react'
-import StartPage from "../components/StartPage";
+import StartPage from "./StartPage";
+import "../style/Start.css";
 
 function Start() {
   return (

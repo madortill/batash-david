@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './style/App.css'
 import { Routes, Route } from "react-router-dom";
 import { useLocation } from "react-router-dom";
-import Start from "./assets/components/Start"
+import Start from "./components/Start"
 
 import til from "./assets/images/til.svg";
 import bahad6 from "./assets/images/bahad6.png";

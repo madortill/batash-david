@@ -1,5 +1,10 @@
 {
     "he":{
-        
+        "startPage": [
+            {
+               "text": "חזרה לבחירת הרכב",
+               "id": "backBtnText"
+            }
+        ]
     }
 }

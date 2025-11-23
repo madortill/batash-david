@@ -1,0 +1,113 @@
+.backBtn {
+    position: absolute;
+    top: 2rem;
+    right: 2.5rem;
+    font-family: "assistant-bold";
+    color: #073799;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.backBtnImg {
+    height: 4.5rem;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.backBtnImg:hover {
+    transform: scale(1.13);
+}
+
+/* startPage */
+
+.about-btn {
+    border: none;
+    color: #FEECD8;
+    font-size: 2rem;
+    background-color: #073799;
+    border-radius: 150px;
+    width: 3rem;
+    height: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    transition: transform 0.25s ease;
+    cursor: pointer;
+}
+
+.aboutBtnContainer {
+    position: absolute;
+    left: 10rem;
+    top: 0.5rem;
+    text-align: center;
+    font-family: "assistant-bold";
+    color: #073799;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.about-btn:hover {
+    transform: scale(1.15);
+}
+
+.div-about {
+    position: absolute;
+    color: #FFF2B4;
+    width: 15rem;
+    height: 25rem;
+    left: 13rem;
+    top: 3.5rem;
+    font-family: "assistant";
+    background: #073799;
+    border-radius: 1rem;
+    box-shadow: 0 15px 20px -20px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    transition: opacity 0.4s ease;
+    z-index: 2;
+    direction: rtl;
+}
+
+.list-text-about {
+    transition: background-color 0.5s ease;
+    margin: 5%;
+}
+
+.list-text-about:hover {
+    background-color: #dbdbdb;
+}
+
+.fade-in {
+    opacity: 1;
+    pointer-events: auto;
+    max-height: 500px;
+}
+
+.fade-out {
+    opacity: 0;
+    pointer-events: none;
+    max-height: 0;
+}
+
+.start-main-content-text {
+    font-family: "rubik";
+    font-size: 3.5rem;
+    color: #E69907;
+}
+
+.start-main-content {
+    position: relative;
+    top: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.davidCard {
+    height: 35rem;
+    border-radius: 17px;
+    margin-top: 1rem;
+}
