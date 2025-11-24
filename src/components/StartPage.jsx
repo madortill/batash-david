@@ -1,18 +1,29 @@
 import React from "react";
 import "../style/Start.css";
-import backBtn from "../assets/images/backBtn.svg";
-import davidCard from "../assets/images/david-card.png";
 import { useState } from "react";
 import { Navigate, useNavigate } from "react-router-dom";
 
-function StartPage() {
+import backBtn from "../assets/images/backBtn.svg";
+import davidCard from "../assets/images/david-card.png";
+import letsStartBtn from "../assets/images/letsStartBtn.png";
+
+
+function StartPage({onSendData}) {
   const [showAbout, setShowAbout] = useState(false);
   const [infoSymbol, setInfoSymbol] = useState("i");
   const navigate = useNavigate();
+
   const toggleAbout = () => {
     setShowAbout((prev) => !prev);
     setInfoSymbol((prev) => (prev === "i" ? "x" : "i"));
   };
+
+  const nextPage = () => {
+    onSendData(1);
+  }
+
+
+
   return (
     <>
       <div className="backBtn">
@@ -46,6 +57,7 @@ function StartPage() {
         <p className="start-main-content-text">ג'יפ דוד</p>
         <img src={davidCard} alt="davidCard" className="davidCard"/>
       </div>
+      <img src={letsStartBtn} alt="startBtn" className="letsStartBtn" onClick={nextPage}/>
     </>
   );
 }
