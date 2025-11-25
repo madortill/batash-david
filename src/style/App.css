@@ -5,6 +5,13 @@ body {
   height: 100%;
   width: 100%;
   background-color: #FFF2B4;
+  font-family: 'assistant';
+  color: #073799;
+  direction: rtl;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
 }
 
 * {
@@ -29,6 +36,7 @@ body {
   height: 100%;
   background-color: #FFF2B4;
   font-family: 'assistant';
+  color: #073799;
   overflow: hidden;
   position: relative;
 }

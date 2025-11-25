@@ -99,9 +99,10 @@
 }
 
 .start-main-content {
-    position: relative;
-    left: 3rem;
-    top: 6rem;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -116,8 +117,8 @@
 .letsStartBtn {
     height: 9rem;
     position: relative;
-    top: 37rem;
-    right: 35rem;
+    top: 39rem;
+    right: 20rem;
     cursor: pointer;
     animation: pulse 1.8s ease infinite;
     display: inline-block;
@@ -150,8 +151,8 @@
 
     .letsStartBtn {
         height: 7rem;
-        top: 37rem;
-        right: 26rem;
+        top: 36rem;
+        right: 16rem;
     }
 }
 
@@ -162,12 +163,8 @@
 
     .letsStartBtn {
         height: 7rem;
-        top: 33rem;
-        right: 26rem;
-    }
-
-    .start-main-content {
-        top: 4rem;
+        top: 32rem;
+        right: 16rem;
     }
 }
 
@@ -178,12 +175,8 @@
 
     .letsStartBtn {
         height: 7rem;
-        top: 28rem;
-        right: 26rem;
-    }
-
-    .start-main-content {
-        top: 2rem;
+        top: 27rem;
+        right: 15rem;
     }
 }
 
@@ -277,11 +270,28 @@
     height: 3rem;
     width: 6rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.nextBtn:hover {
+    transform: scale(1.25);
+}
+.nextBtnInfo {
+    font-size: 1.5rem;
+    height: 3rem;
+    width: 6rem;
+    cursor: default;
+}
+
+.nextBtnInfo:hover {
+    transform: scale(1);
 }
 
 .nextBtnDisable {
     background-color: #BFBFBF;
     color: #EEEEEE;
+    cursor: default;
 }
 
 .narrationBtnInfo {
@@ -316,4 +326,81 @@
     bottom: 7.5rem;
     text-align: center;
     font-size: 1rem;
+}
+
+/* welcomePage */
+.welcome-title {
+    font-family: "rubik-black";
+    font-size: 2.9rem;
+    margin-bottom: 1rem;
+}
+
+.welcome-text {
+    color: black;
+    font-size: 1.9rem;
+    font-weight: bold;
+}
+
+.welcome-mainContent {
+    width: 48rem;
+    position: relative;
+    top: 12rem;
+    right: 10rem;
+}
+
+.welcome-road {
+    position: relative;
+    height: 100%;
+    left: 10rem;
+}
+
+.welcome-nextBtn {
+    margin-top: 4rem;
+    width: 12rem;
+    height: 3.2rem;;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+.welcome-gal {
+    position: relative;
+    z-index: 1;
+    height: 20rem;
+    top: 25rem;
+    right: 26rem;
+}
+
+@media (max-width: 1600px) {
+    .welcome-mainContent {
+        right: 18rem;
+    }
+
+    .welcome-road {
+        left: 20rem;
+    }
+    .welcome-gal {
+        right: 20rem;
+        top: 20rem;
+    }
+}
+@media (max-width: 1350px) {
+    .welcome-mainContent {
+        right: 20rem;
+    }
+    .welcome-road {
+        left: 22rem;
+    }
+    .welcome-gal {
+        right: 16rem;
+        top: 23rem;
+        height: 17rem;
+    }
+}
+
+@media (max-height: 770px) {
+    .welcome-gal {
+        right: 20rem;
+        top: 20rem;
+        height: 17rem;
+    }
 }

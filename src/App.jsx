@@ -3,6 +3,7 @@ import './style/App.css'
 import { Routes, Route } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import Start from "./components/Start"
+import Content from "./components/Content"
 
 import til from "./assets/images/til.svg";
 import bahad6 from "./assets/images/bahad6.png";
@@ -19,6 +20,7 @@ function App() {
       </div>
       <Routes>
         <Route path="/" element={<Start />} />  
+        <Route path="/content" element={<Content />} />  
       </Routes>
     </>
   )

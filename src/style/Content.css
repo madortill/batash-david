@@ -1,0 +1,31 @@
+
+/* contentStart */
+.svg-wrapper {
+    position: relative;
+    top: 7rem;
+    right: 15rem;
+}
+
+.content-start-title {
+    font-family: "rubik-black";
+    font-size: 4rem;
+    position: relative;
+    top: 13rem;
+    left: 10rem;
+}
+
+@media (max-width: 1200px) {
+    .svg-wrapper {
+        right: 7rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .content-start-title {
+        left: 7rem;
+    }
+    .svg-wrapper {
+        right: 5rem;
+    }
+}
+

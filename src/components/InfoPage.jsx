@@ -70,7 +70,7 @@ function InfoPage({ onSendData }) {
             <p className="backBtnInfoText">{nextBtnInfo}</p>
           </div>
           <div className="infoBtnExplain">
-            <button className="nextBtn nextBtnDisable nextBtrnDisableInfo">
+            <button className="nextBtn nextBtnDisable nextBtnInfo">
               {nextBtn}
             </button>
             <p className="backBtnInfoText">
