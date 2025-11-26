@@ -40,3 +40,69 @@
         width: 35rem;
     }
 }
+
+/* TechnicalData */
+
+.hover-table {
+    border-collapse: collapse;
+    width: 50rem;
+    text-align: center;
+    color: black;
+    background-color: #FFFFFF;
+    position: relative;
+    top: 7rem;
+    right: 5rem;
+}
+
+.hover-table td {
+    border: 1px solid #073799;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.hover-table td:hover {
+    background-color: #FFF2B4;
+}
+
+.hover-table td.first-row {
+    background-color: #E69907;
+}
+
+.hover-table td.bold-cell {
+    font-weight: bold;
+}
+
+@media (max-width: 1200px) {
+    .hover-table {
+        width: 38rem;
+    }
+
+    .galTechnical {
+        position: relative;
+        top: 25rem;
+        right: 3rem;
+    }
+}
+
+@media (max-height: 950px) {
+    .hover-table {
+        top: 5rem;
+    }
+}
+
+.galTechnicalImg {
+    height: 10rem;
+}
+
+.galTechnical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 25rem;
+    right: 6rem;
+}
+
+.galTechnicalBubble {
+    width: 13rem;
+}

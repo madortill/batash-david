@@ -5,6 +5,7 @@ import { Navigate, useNavigate } from "react-router-dom";
 import ContentStart from "./ContentStart";
 import NavBar from "./NavBar";
 import KnowCar from './KnowCar';
+import Defender from './Defender';
 
 
 function Content() {
@@ -20,6 +21,7 @@ function Content() {
     <>
       {page === 0 && <ContentStart changeToSection={handleChangeSection}/>}
       {page === 1 && <KnowCar changeToSection={handleChangeSection}/>}
+      {page === 2 && <Defender changeToSection={handleChangeSection}/>}
       {page !== 0 && <NavBar/>}
     </>
   )

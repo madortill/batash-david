@@ -10,9 +10,9 @@ import defenderLogo from "../assets/images/defenderLogo.svg";
 
 
 
-function Introduction({onSendData}) {
-    const [page, setPage] = useState(0);
-    const[isDisabled, changeNextBtn] = useState(true);
+function Introduction({onSendData, startPage}) {
+    const [page, setPage] = useState(startPage);
+    const[isDisabled, changeNextBtn] =  useState(startPage === 0);
     const [flippedCount, setFlippedCount] = useState(0);
     const { data } = useData();
     const introText = data.Introduction[0].text;
@@ -20,6 +20,8 @@ function Introduction({onSendData}) {
     const introText2 = data.Introduction[2].text;
     const nextBtn = data.general[1].text;
     const backBtnText = data.general[0].text;
+
+    
     
     const previousPage = () => {
       setPage(0);
