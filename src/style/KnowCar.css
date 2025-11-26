@@ -1,0 +1,42 @@
+/* intoduction */
+
+.intoduction-container {
+    height: 35rem;
+    width: 45rem;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    color: black;
+    font-family: "assistant-semiBold";
+    padding: 1rem;
+}
+
+.intro-text {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+}
+
+.intro-second {
+    padding: 3rem;
+}
+
+.intro-text-sec {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+
+
+@media (max-width: 1100px) {
+    .intoduction-container {
+        width: 35rem;
+    }
+}

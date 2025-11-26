@@ -267,11 +267,14 @@
     font-family: "assistant-extraBold";
     font-size: 1.5rem;
     border-radius: 8px;
-    height: 3rem;
-    width: 6rem;
+    height: 3.5rem;
+    width: 6.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     transition: transform 0.2s ease;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
 }
 
 .nextBtn:hover {
@@ -282,6 +285,9 @@
     height: 3rem;
     width: 6rem;
     cursor: default;
+    position: relative;
+    bottom: 0rem;
+    left: 0rem;
 }
 
 .nextBtnInfo:hover {
@@ -292,6 +298,9 @@
     background-color: #BFBFBF;
     color: #EEEEEE;
     cursor: default;
+}
+.nextBtnDisable:hover {
+    transform: scale(1);
 }
 
 .narrationBtnInfo {
@@ -360,6 +369,10 @@
     height: 3.2rem;;
     font-size: 1.7rem;
     cursor: pointer;
+    position: relative;
+    top: 0rem;
+    right: 0rem;
+    z-index: 3;
 }
 
 .welcome-gal {
