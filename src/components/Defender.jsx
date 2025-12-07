@@ -1,29 +1,42 @@
-import React from 'react'
+import React from "react";
 import { useState } from "react";
 import "../style/Defender.css";
-import DefenderStart from './DefenderStart';
+import DefenderStart from "./DefenderStart";
+import DefenderVideo from "./DefenderVideo";
 
 function Defender({ changeToSection }) {
-    const [page, setPage] = useState(0);
-    const [startPage, setStartPage] = useState(0);
-    const handleChangePage = (data) => {
-      setStartPage(1);
-      if (data === 4) {
-        setPage(0);
-      } else {
-        setPage(data);
-      }
-    };
+  const [page, setPage] = useState(0);
+  const [videoStartPage, setVideoStartPage] = useState(0);
+  const handleChangePage = (data) => {
+    if (data === 4) {
+      setPage(0);
+    } else {
+      setPage(data);
+      setVideoStartPage(1);
+    }
+  };
 
-    const handleChangeSection = (section) => {
-        if (changeToSection) changeToSection(section); // קורא לסבא
-      };
-    
+  const handleChangeSection = (section) => {
+    if (changeToSection) changeToSection(section);
+  };
+
   return (
     <>
-      <DefenderStart changeToPage={handleChangePage} changeToSection={handleChangeSection}/>
+      {page == 0 && (
+        <DefenderStart
+          changeToPage={handleChangePage}
+          changeToSection={handleChangeSection}
+        />
+      )}
+      {page == 1 && (
+        <DefenderVideo
+          startPage={videoStartPage}
+          changeToPage={handleChangePage}
+          changeToSection={handleChangeSection}
+        />
+      )}
     </>
-  )
+  );
 }
 
-export default Defender
+export default Defender;

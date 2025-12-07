@@ -3,4 +3,41 @@
 .defender-start-textBox {
     position: relative;
     text-align: right;
+    color: black;
+    font-size: 2rem;
+    width: 45rem;
+    top: 10rem;
+    left: 15rem;
+}
+
+.defender-start-title {
+    font-family: "rubik-black";
+    font-size: 2.6rem;
+    color: #073799;
+    margin-bottom: 2rem;
+}
+
+.defender-start-semiTitle {
+    font-family: "assistant-bold";
+}
+
+@media (max-width: 1300px) {
+    .defender-start-textBox {
+        left: 10rem;
+        width: 35rem;
+    }
+}
+@media (max-width: 1000px) {
+    .defender-start-textBox {
+        left: 10rem;
+        width: 25rem;
+    }
+}
+@media (max-height: 1000px) {
+    .defender-start-textBox {
+        top: 8rem;
+    }
+    .defender-start-title {
+        margin-bottom: 0rem;
+    }
 }

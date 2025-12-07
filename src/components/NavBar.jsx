@@ -5,11 +5,11 @@ import "../style/Navbar.css";
 
 import TiresNavbar from "./TiresNavbar";
 
-function NavBar() {
+function NavBar({ navSection}) {
   return (
     <>
     <div className='navbar-wrapper'>
-      <TiresNavbar contentStart={false}/>
+      <TiresNavbar contentStart={false} navSection={navSection} />
     </div>
     </>
   )
