@@ -90,14 +90,17 @@
     }
 }
 
+.galBubble {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .galTechnicalImg {
     height: 10rem;
 }
 
 .galTechnical {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     position: relative;
     top: 25rem;
     right: 6rem;

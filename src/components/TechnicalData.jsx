@@ -49,8 +49,8 @@ function TechnicalData({ setPage, changeToSection }) {
           ))}
         </tbody>
       </table>
-      <div className="galTechnical">
-        <img src={new URL(data.TechnicalData[1].img, import.meta.url).href} className="galTechnicalBubble" alt="galTechnicalBubble" />
+      <div className="galTechnical galBubble">
+        <img src={data.TechnicalData[1].img} className="galTechnicalBubble" alt="galTechnicalBubble" />
         <img className="galTechnicalImg" src={galGalgal} alt="galGalgal" />
       </div>
       <button className="nextBtn" onClick={nextPage}>

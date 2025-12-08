@@ -41,3 +41,81 @@
         margin-bottom: 0rem;
     }
 }
+
+/* defenderVideo */
+
+.defenderVideoTitle {
+    font-family: "rubik-black";
+    font-size: 2.6rem;
+    color: #073799;
+    margin-bottom: 2rem;
+    position: relative;
+    top: 7rem;
+    left: 19rem;
+}
+
+.defenderVideoSrc {
+    height: 30rem;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+.defender-video-text-container {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    width: 45rem;
+    text-align: right;
+    font-size: 1.5rem;
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    border-radius: 20px;
+    color: black;
+}
+
+.galDefenderVideo {
+    position: relative;
+    top: 28rem;
+    right: 17rem;
+}
+@media (max-width: 1200px) {
+    .defenderVideoSrc {
+        height: 25rem;
+    }
+    .defenderVideoTitle {
+        left: 15rem;
+    }
+}
+@media (max-width: 1100px) {
+    .defenderVideoTitle {
+        left: 15rem;
+    }
+    .defenderVideoSrc {
+        height: 22rem;
+    }
+    .defender-video-text-container {
+        width: 38rem;
+        font-size: 1.4rem;
+    }
+    .galDefenderVideo {
+        right: 13.5rem;
+    }
+    .defenderVideoTitle {
+        left: 10rem;
+    }
+}
+
+@media (max-height: 900px) {
+    .defender-video-text-container {
+        top: 58%;
+    }
+    .galDefenderVideo {
+        top: 26rem;
+    }
+}
+
+
+

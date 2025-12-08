@@ -12,7 +12,6 @@ function Defender({ changeToSection }) {
       setPage(0);
     } else {
       setPage(data);
-      setVideoStartPage(1);
     }
   };
 
