@@ -10,6 +10,7 @@ function TechnicalData({ setPage, changeToSection }) {
   const nextBtn = data.general[1].text;
   const backBtnText = data.general[0].text;
   const tableData = data.TechnicalData[0].tableData;
+  const technicalTitle = data.TechnicalData[1].title;
 
   const previousPage = () => {
     setPage(0)
@@ -20,7 +21,7 @@ function TechnicalData({ setPage, changeToSection }) {
   };
 
   return (
-    <>
+    <div className="TechnicalData">
       <div className="backBtn">
         <img
           src={backBtn}
@@ -30,6 +31,7 @@ function TechnicalData({ setPage, changeToSection }) {
         />
         <p className="backBtnText">{backBtnText}</p>
       </div>
+      <p className="technicalData-title">{technicalTitle}</p>
       <table className="hover-table">
         <tbody>
           {tableData.map((row, rowIdx) => (
@@ -56,7 +58,7 @@ function TechnicalData({ setPage, changeToSection }) {
       <button className="nextBtn" onClick={nextPage}>
         {nextBtn}
       </button>
-    </>
+    </div>
   );
 }
 

@@ -19,7 +19,7 @@ function DefenderStart({ changeToSection, changeToPage }) {
     changeToPage(1);
   };
   return (
-    <>
+    <div className="DefenderStart">
       <div className="backBtn">
         <img
           src={backBtn}
@@ -38,7 +38,7 @@ function DefenderStart({ changeToSection, changeToPage }) {
       <button className="nextBtn" onClick={nextPage}>
         {nextBtn}
       </button>
-    </>
+    </div>
   );
 }
 

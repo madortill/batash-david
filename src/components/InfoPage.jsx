@@ -33,7 +33,7 @@ function InfoPage({ onSendData }) {
   }
 
   return (
-    <>
+    <div className="InfoPage">
       <div className="backBtn">
         <img
           src={backBtn}
@@ -95,7 +95,7 @@ function InfoPage({ onSendData }) {
           </div>
           <p className="narrationExplain">{narrationExplain}</p>
       </div>
-    </>
+    </div>
   );
 }
 

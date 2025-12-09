@@ -28,13 +28,13 @@ function Content() {
   
       };
   return (
-    <>
+    <div className='Content'>
       {page === 0 && <ContentStart changeToSection={handleChangeSection}/>}
       {page === 1 && <KnowCar changeToSection={handleChangeSection}  lastPage={knowCarLastPage}
           setLastPage={setKnowCarLastPage} />}
       {page === 2 && <Defender changeToSection={handleChangeSection} />}
       {page !== 0 && <NavBar navSection={navSection} setNavSection={setNavSection} />}
-    </>
+    </div>
   )
 }
 

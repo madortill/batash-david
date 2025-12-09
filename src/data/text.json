@@ -148,7 +148,8 @@
             },
             {
                 "text": "שימו לב ללחץ האוויר והמשקל הכולל!",
-                "img": "images/galBubble/he/galTechnical.svg"
+                "img": "images/galBubble/he/galTechnical.svg",
+                "title": "נתונים טכניים"
             }
         ],
         "DefenderStart": [
@@ -162,14 +163,31 @@
         "DefenderVideo": [
             {
                 "title": "תפעול תיבת העברה",
-                "video": "src/assets/videos/he/homeLife.mp4"
+                "video": "videos/he/homeLife.mp4"
             },
             {
-                "galSrc": "public/images/galBubble/he/galDefenderVideo.svg",
+                "galSrc": "images/galBubble/he/galDefenderVideo.svg",
                 "title1": "תפקיד תיבת ההעברה",
                 "text1": "ידית ההילוכים המשנית, או תיבת העברה, מאפשרת בחירה בין טווח הילוכים גבוה לטווח נמוך, וביניהם קיים גם מצב סרק. הטווח הגבוה (H) מיועד לנהיגה רגילה בתנאי דרך שגרתיים וגם לנסיעה בשטח קל, על קרקע יבשה ומישורית. הטווח הנמוך (L), לעומת זאת, משמש במצבים שבהם נדרש כוח רב יותר במהירויות נמוכות – כמו תמרון איטי, נסיעה בשטח קשה, טיפוס או ירידה תלולה, או בכל מצב שבו הרכב מתקשה להתקדם בטווח הגבוה.",
                 "title2": "מעבר בין המצבים ושימוש במצב סרק",
                 "text2": "מצב הסרק (N) מנתק את העברת הכוח מהמנוע לגלגלים, ולכן משתמשים בו רק בעת גרירה. בעת מעבר בין המצבים יש ללחוץ על המצמד ולהעביר את הידית בשלבים: מ־H ל־N ומשם ל־L, או בכיוון ההפוך. אם קיימת התנגדות בעת שילוב ממצב סרק לטווח גבוה או נמוך, אין להפעיל כוח. במצב כזה, כשהמצמד עדיין לחוץ והתיבה המשנית בניוטרל, משלבים להילוך שני בתיבת ההילוכים הראשית, משחררים את המצמד לרגע קצר, לוחצים שוב ומנסים לשלב מחדש. לפני תחילת הנסיעה חשוב לבחור בתיבת ההילוכים הראשית את ההילוך המתאים לתנאי הדרך."
+            }
+        ], 
+        "DefenderTransfer": [
+            {
+                "title": "תפעול תיבת העברה",
+                "roadTitle": "מצב כביש -",
+                "roadText": " דיפרנציאל מרכזי פתוח",
+                "fieldTitle": "מצב שטח -",
+                "fieldText": " דיפרנציאל מרכזי נעול",
+                "wheel1": "images/he/gearWheel1.svg",
+                "wheel2": "images/he/gearWheel2.svg",
+                "gal1": "images/galBubble/he/defenderTransfer1.svg", 
+                "gal2": "images/galBubble/he/defenderTransfer2.svg", 
+                "gal3": "images/galBubble/he/defenderTransfer3.svg"
+            },
+            {
+
             }
         ]
     }

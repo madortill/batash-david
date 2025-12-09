@@ -27,16 +27,19 @@
         width: 35rem;
     }
 }
+
 @media (max-width: 1000px) {
     .defender-start-textBox {
         left: 10rem;
         width: 25rem;
     }
 }
+
 @media (max-height: 1000px) {
     .defender-start-textBox {
         top: 8rem;
     }
+
     .defender-start-title {
         margin-bottom: 0rem;
     }
@@ -50,7 +53,7 @@
     color: #073799;
     margin-bottom: 2rem;
     position: relative;
-    top: 7rem;
+    top: 6rem;
     left: 19rem;
 }
 
@@ -76,33 +79,44 @@
     color: black;
 }
 
+.defender-video-text-title {
+    font-weight: bold;
+}
+
 .galDefenderVideo {
     position: relative;
-    top: 28rem;
-    right: 17rem;
+    top: 24rem;
+    right: 28.5rem;
 }
+
 @media (max-width: 1200px) {
     .defenderVideoSrc {
         height: 25rem;
     }
+
     .defenderVideoTitle {
         left: 15rem;
     }
 }
+
 @media (max-width: 1100px) {
     .defenderVideoTitle {
         left: 15rem;
     }
+
     .defenderVideoSrc {
         height: 22rem;
     }
+
     .defender-video-text-container {
         width: 38rem;
         font-size: 1.4rem;
     }
+
     .galDefenderVideo {
-        right: 13.5rem;
+        right: 25rem;
     }
+
     .defenderVideoTitle {
         left: 10rem;
     }
@@ -112,10 +126,154 @@
     .defender-video-text-container {
         top: 58%;
     }
+
     .galDefenderVideo {
         top: 26rem;
     }
 }
 
+/* defenderTransferSvg */
 
+.class-1,
+.class-2 {
+    fill: #fff;
+}
 
+.class-3 {
+    font-size: 96px;
+}
+
+.class-3,
+.class-2,
+.class-4 {
+    font-family: Bahnschrift-Bold, Bahnschrift;
+    font-variation-settings: 'wght'700, 'wdth'100;
+    font-weight: 700;
+}
+
+.class-5 {
+    fill: #e69907;
+}
+
+.class-6 {
+    fill: #073799;
+}
+
+.class-2 {
+    font-size: 118px;
+}
+
+.class-4 {
+    font-size: 50px;
+}
+
+@keyframes blink-soft {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.4;
+    }
+}
+
+.transfer-blink { 
+    animation: blink-soft 1.2s ease-in infinite; 
+    cursor: pointer;
+}
+
+/* defenderTransfer */
+
+.defenderTransferState {
+    background-color: #073799;
+    border: 2px solid #fff;
+    font-size: 1.3rem;
+    color: #fff;
+    padding: 0.8rem;
+    width: 14rem;
+    border-radius: 7px;
+    margin: 0rem 4rem;
+    margin-bottom: 2rem;
+}
+
+.defender-transfer-state-title {
+    font-family: "assistant-bold";
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.defenderTransferStateContainer {
+    display: flex;
+}
+
+.defenderTransferContent {
+    position: relative;
+    top: 6rem;
+    z-index: 1;
+}
+
+.galDefenderTansfer {
+    position: relative;
+    bottom: 6rem;
+    right: 30rem;
+}
+
+@media (max-width: 1200px) {
+    .galDefenderTansfer {
+        right: 28rem;
+    }
+}
+@media (max-width: 1100px) {
+    .defenderTransferState {
+        margin: 0rem 3rem;
+        margin-bottom: 2rem;
+    }
+    .galDefenderTansfer {
+        right: 25.5rem;
+    }
+}
+@media (max-width: 1000px) {
+    .defenderTransferState {
+        margin: 0rem 2.5rem;
+        margin-bottom: 2rem;
+    }
+    .galDefenderTansfer {
+        right: 22rem;
+    }
+    .defenderTransferContent {
+        left: 3rem;
+    }
+}
+
+.blur-background {
+    background-color: rgb(224, 224, 224, 0.6);
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    z-index: 1;
+}
+
+.defender-wheel-container {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    z-index: 1;
+}
+
+.xbtn {
+    font-family: "fredoka";
+    color: #FFF2B4;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.xbtn-defender-wheel {
+    position: relative;
+    bottom: 27rem;
+   left: 9rem;
+}

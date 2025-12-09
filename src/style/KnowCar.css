@@ -43,6 +43,14 @@
 
 /* TechnicalData */
 
+.technicalData-title {
+    font-family: "rubik-black";
+    font-size: 2.6rem;
+    position: relative;
+    top: 4rem;
+    left: 12rem;
+}
+
 .hover-table {
     border-collapse: collapse;
     width: 50rem;
@@ -72,24 +80,6 @@
     font-weight: bold;
 }
 
-@media (max-width: 1200px) {
-    .hover-table {
-        width: 38rem;
-    }
-
-    .galTechnical {
-        position: relative;
-        top: 25rem;
-        right: 3rem;
-    }
-}
-
-@media (max-height: 950px) {
-    .hover-table {
-        top: 5rem;
-    }
-}
-
 .galBubble {
     display: flex;
     flex-direction: column;
@@ -102,10 +92,28 @@
 
 .galTechnical {
     position: relative;
-    top: 25rem;
-    right: 6rem;
+    bottom: 14rem;
+    right: 35.5rem;
 }
 
 .galTechnicalBubble {
     width: 13rem;
+}
+
+
+@media (max-width: 1300px) {
+    .hover-table {
+        width: 38rem;
+       right: -3rem;
+    }
+
+    .galTechnical {
+        right: 23rem;
+    }
+}
+
+@media (max-height: 950px) {
+    .hover-table {
+        top: 5rem;
+    }
 }

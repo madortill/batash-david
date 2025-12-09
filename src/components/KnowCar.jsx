@@ -16,10 +16,10 @@ function KnowCar({ changeToSection, lastPage, setLastPage }) {
       setPage(lastPage);
     }, [lastPage]);
   return (
-    <>
+    <div className='KnowCar'>
       {page == 0 && <Introduction startPage={startPage}  onSendData={handleChangePage}/>}
       {page == 1 && <TechnicalData  changeToSection={changeToSection} setPage={setPage}/>}
-    </>
+    </div>
   )
 }
 

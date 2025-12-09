@@ -3,15 +3,22 @@ import { useState } from "react";
 import "../style/Defender.css";
 import DefenderStart from "./DefenderStart";
 import DefenderVideo from "./DefenderVideo";
+import DefenderTransfer from "./DefenderTransfer";
 
 function Defender({ changeToSection }) {
   const [page, setPage] = useState(0);
-  const [videoStartPage, setVideoStartPage] = useState(0);
-  const handleChangePage = (data) => {
-    if (data === 4) {
-      setPage(0);
+  const [startPage, setStartPage] = useState(0);
+  const pagesMap = {
+    0: 0, 
+    1: 1,
+    2: 0 
+  };
+  const handleChangePage = (targetPage, returnToLast = false) => {
+    setPage(targetPage);
+    if (returnToLast) {
+      setStartPage(pagesMap[targetPage]);
     } else {
-      setPage(data);
+      setStartPage(0);
     }
   };
 
@@ -20,7 +27,7 @@ function Defender({ changeToSection }) {
   };
 
   return (
-    <>
+    <div className="Defender">
       {page == 0 && (
         <DefenderStart
           changeToPage={handleChangePage}
@@ -29,12 +36,18 @@ function Defender({ changeToSection }) {
       )}
       {page == 1 && (
         <DefenderVideo
-          startPage={videoStartPage}
+          startPage={startPage}
           changeToPage={handleChangePage}
           changeToSection={handleChangeSection}
         />
       )}
-    </>
+      {page == 2 && (
+        <DefenderTransfer
+          changeToPage={handleChangePage}
+          changeToSection={handleChangeSection}
+        />
+      )}
+    </div>
   );
 }
 

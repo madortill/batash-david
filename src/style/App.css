@@ -57,6 +57,7 @@ body {
 
 
 
+
 @font-face {
   font-family: rubik;
   src: url('/src/assets/fonts/Rubik/Rubik-Bold.ttf');
@@ -85,6 +86,6 @@ body {
 }
 
 @font-face {
-  font-family: "fredoka";
+  font-family: fredoka;
   src: url('/src/assets/fonts/Fredoka/Fredoka-Bold.ttf');
 }

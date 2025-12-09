@@ -25,7 +25,7 @@ function StartPage({onSendData}) {
 
 
   return (
-    <>
+    <div className="StartPage">
       <div className="backBtn">
         <img src={backBtn} alt="backBtn" className="backBtnImg" />
         <p className="backBtnText">חזרה לבחירת הרכב</p>
@@ -58,7 +58,7 @@ function StartPage({onSendData}) {
         <img src={davidCard} alt="davidCard" className="davidCard"/>
       </div>
       <img src={letsStartBtn} alt="startBtn" className="letsStartBtn" onClick={nextPage}/>
-    </>
+    </div>
   );
 }
 

@@ -31,7 +31,7 @@ function DefenderVideo({ changeToSection, changeToPage, startPage }) {
     }
   };
   return (
-    <>
+    <div className="DefenderVideo">
       <div className="backBtn">
         <img
           src={backBtn}
@@ -50,13 +50,13 @@ function DefenderVideo({ changeToSection, changeToPage, startPage }) {
         <p className="defender-video-text">{defenderText2}</p>
         </div>}
         { page === 1 &&<div className="galDefenderVideo galBubble">
-        <img src={data.DefenderVideo[1].galSrc} className="galTechnicalBubble" alt="galTechnicalBubble" />
+        <img src={data.DefenderVideo[1].galSrc} className="galTechnicalBubble" alt="galBubble" />
         <img className="galTechnicalImg" src={galGalgal} alt="galGalgal" />
       </div>}
       <button className="nextBtn" onClick={nextPage}>
         {nextBtn}
       </button>
-    </>
+    </div>
   );
 }
 

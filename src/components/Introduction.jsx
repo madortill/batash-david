@@ -60,7 +60,7 @@ function Introduction({onSendData, startPage}) {
       }
     }
   return (
-    <>
+    <div className='Introduction'>
     {page === 1 && <div className="backBtn">
         <img
           src={backBtn}
@@ -92,7 +92,7 @@ function Introduction({onSendData, startPage}) {
             }
       </div>
       <button className={`nextBtn ${isDisabled ? "nextBtnDisable" : ""}`} onClick={nextPage}>{nextBtn}</button>
-    </>
+    </div>
   )
 }
 
