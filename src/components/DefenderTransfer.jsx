@@ -78,7 +78,7 @@ function DefenderTransfer({ changeToSection, changeToPage, startPage }) {
       {(page === 1 || page === 3) &&<div className="blur-background"></div>}
       {page === 1 && <div className="defender-wheel-container">
         <img className="defender-wheel" src={data.DefenderTransfer[0].wheel1} alt="wheel1" />
-        <p className="xbtn xbtn-defender-wheel" onClick={() => setPage(2)}>Y</p>
+        <p className="xbtn xbtn-defender-wheel" onClick={() => setPage(2)}>X</p>
       </div>}
       {page === 3 && <div className="defender-wheel-container">
         <img className="defender-wheel" src={data.DefenderTransfer[0].wheel2} alt="wheel1" />
