@@ -179,8 +179,8 @@
     }
 }
 
-.transfer-blink { 
-    animation: blink-soft 1.2s ease-in infinite; 
+.transfer-blink {
+    animation: blink-soft 1.2s ease-in infinite;
     cursor: pointer;
 }
 
@@ -225,23 +225,28 @@
         right: 28rem;
     }
 }
+
 @media (max-width: 1100px) {
     .defenderTransferState {
         margin: 0rem 3rem;
         margin-bottom: 2rem;
     }
+
     .galDefenderTansfer {
         right: 25.5rem;
     }
 }
+
 @media (max-width: 1000px) {
     .defenderTransferState {
         margin: 0rem 2.5rem;
         margin-bottom: 2rem;
     }
+
     .galDefenderTansfer {
         right: 22rem;
     }
+
     .defenderTransferContent {
         left: 3rem;
     }
@@ -275,5 +280,121 @@
 .xbtn-defender-wheel {
     position: relative;
     bottom: 27rem;
-   left: 9rem;
+    left: 9rem;
+}
+
+/* difrenzialChoose */
+
+.difrenzialChooseTitle {
+    font-family: "rubik-black";
+    font-size: 2.6rem;
+    color: #073799;
+    margin-bottom: 2rem;
+    position: relative;
+    top: 6rem;
+    left: 15rem;
+}
+
+.roadBackground {
+    position: relative;
+    top: 7rem;
+    width: 47rem;
+    height: 34rem;
+    background-image: url("../assets/images/road-background.svg");
+    background-size: cover;
+    font-size: 1.68rem;
+    padding: 6rem;
+    text-align: right;
+    color: black;
+}
+
+.warningText {
+    color: #E69907;
+    font-family: "assistant-bold";
+}
+
+.boldText {
+    font-family: "assistant-bold";
+}
+
+.highlightText {
+    font-family: "assistant-bold";
+    color: #E69907;
+}
+
+.difrenzialChooseWarningSign {
+    width: 7rem;
+    position: relative;
+    bottom: 3rem;
+    right: 29rem;
+    cursor: pointer;
+    animation: pulse 1.8s ease infinite;
+    z-index: 1;
+}
+
+.difrenzialChooseBubble {
+    width: 8rem;
+    position: relative;
+    bottom: 5rem;
+    right: 17rem;
+}
+
+.xbtn-difrenzialChoose {
+    color: #fff;
+    position: relative;
+    bottom: 30rem;
+    left: 8rem;
+}
+
+.warning1-container {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    z-index: 1;
+}
+
+@media (max-width: 1500px) {
+    .difrenzialChooseTitle {
+        left: 8rem;
+    }
+}
+
+.roadBackground p {
+    white-space: normal;
+}
+
+.roadBackground span,
+.roadBackground strong {
+    display: inline !important;
+    white-space: normal !important;
+}
+
+.road-page-0 {
+    font-size: 2rem;
+}
+
+@media (max-width: 1100px) {
+    .difrenzialChooseTitle {
+        left: 5rem;
+        font-size: 2.2rem;
+    }
+
+    .roadBackground {
+        width: 40rem;
+        height: 29rem;
+        font-size: 1.45rem;
+        padding: 5rem;
+    }
+
+    .difrenzialChooseBubble {
+        width: 7rem;
+        right: 14.5rem;
+        bottom: 4.3rem;
+    }
+
+    .difrenzialChooseWarningSign {
+        right: 25rem;
+        width: 6rem;
+    }
 }

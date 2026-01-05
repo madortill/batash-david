@@ -1,17 +1,20 @@
 import React from "react";
 import { useState } from "react";
+import { useData } from "../context/DataContext";
 import "../style/Defender.css";
 import DefenderStart from "./DefenderStart";
 import DefenderVideo from "./DefenderVideo";
 import DefenderTransfer from "./DefenderTransfer";
+import DifrenzialChoose from "./DifrenzialChoose";
 
 function Defender({ changeToSection }) {
   const [page, setPage] = useState(0);
   const [startPage, setStartPage] = useState(0);
+  const { data } = useData();
   const pagesMap = {
-    0: 0, 
+    0: 0,
     1: 1,
-    2: 0 
+    2: 0,
   };
   const handleChangePage = (targetPage, returnToLast = false) => {
     setPage(targetPage);
@@ -45,6 +48,22 @@ function Defender({ changeToSection }) {
         <DefenderTransfer
           changeToPage={handleChangePage}
           changeToSection={handleChangeSection}
+        />
+      )}
+      {page == 3 && (
+        <DifrenzialChoose
+          onNext={() => handleChangePage(4)}
+          screenId={0}
+          screenData={data.DifrenzialChoose[0].screens[0]}
+          onBack={() => handleChangePage(2, true)}
+        />
+      )}
+      {page == 4 && (
+        <DifrenzialChoose
+          onNext={() => handleChangePage(5)}
+          onBack={() => handleChangePage(3, true)}
+          screenId={1}
+          screenData={data.DifrenzialChoose[0].screens[1]}
         />
       )}
     </div>
