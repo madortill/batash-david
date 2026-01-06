@@ -2,7 +2,7 @@
 
 .defender-start-textBox {
     position: relative;
-    text-align: right;
+    text-align: start;
     color: black;
     font-size: 2rem;
     width: 45rem;
@@ -71,7 +71,7 @@
     right: 50%;
     transform: translate(50%, -50%);
     width: 45rem;
-    text-align: right;
+    text-align: start;
     font-size: 1.5rem;
     background-color: rgb(255, 255, 255);
     padding: 1rem;
@@ -304,7 +304,7 @@
     background-size: cover;
     font-size: 1.68rem;
     padding: 6rem;
-    text-align: right;
+    text-align: start;
     color: black;
 }
 
@@ -396,5 +396,103 @@
     .difrenzialChooseWarningSign {
         right: 25rem;
         width: 6rem;
+    }
+}
+
+/* ChangeGear */
+.hover-table-Gear {
+    white-space: pre-line;
+}
+
+.hover-table-Gear td:last-child {
+    text-align: start;
+}
+
+/* EmergencyStart */
+
+.underlineText {
+    text-decoration: underline;
+}
+
+.EmergencyStartText {
+    color: black;
+    font-size: 1.9rem;
+    width: 50rem;
+    text-align: start;
+    position: relative;
+    top: 7rem;
+    left: 2rem;
+}
+
+.EmergencyStartText-inner {
+    margin-top: 1.5rem;
+}
+
+.galEmergencyStart {
+    position: relative;
+    top: 6rem;
+    right: 29rem;
+}
+
+.emergency-start-img {
+    width: 18rem;
+    position: relative;
+    top: 15rem;
+    left: 8rem;
+}
+
+.emergencyKey {
+    width: 10rem;
+    position: relative;
+    top: 18rem;
+    left: 2rem;
+}
+
+.emergency-start-img2 {
+    width: 18rem;
+    position: relative;
+    top: 8rem;
+    left: 0rem;
+}
+
+.emergency-animation {
+    animation: pulse 1.8s ease infinite;
+    cursor: pointer;
+}
+
+.emergency-start-ignition {
+    position: relative;
+    top: 22rem;
+    left:25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    font-family: "assistant-bold";
+}
+
+.emergency-start-ignition-img {
+    width: 8rem;
+}
+
+.galEmergencyStart-page2 {
+    top: -7rem;
+}
+
+@media (max-width: 1100px) {
+    .EmergencyStartText {
+        left: 0rem;
+    }
+}
+@media (max-width: 1200px) {
+    .galEmergencyStart {
+        top: 7rem;
+        right: 20rem;
+    }
+    .galEmergencyStart-page2 {
+        top: -7rem;
+    }
+    .emergency-start-ignition {
+        left:17rem;
     }
 }
