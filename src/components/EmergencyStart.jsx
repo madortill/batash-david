@@ -51,7 +51,7 @@ function EmergencyStart({ changeToPage, startPage }) {
   const nextStep = () => {
     if (isIgnited || isTurned) {
         setTimeout(() => {
-            setPage(4);
+            setPage(3);
         }, 1000);
     }
   };
@@ -92,7 +92,7 @@ function EmergencyStart({ changeToPage, startPage }) {
           src={emergencyKey}
           alt="emergencyKey"
           className={`emergencyKey ${page === 1 ? "emergency-animation" : ""}`}
-          onClick={() => setPage(2)}
+          onClick={() => setTimeout(() => setPage(2), 300)}
         />
       )}
       {(page === 2 || page === 3 ) && (

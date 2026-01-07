@@ -11,7 +11,7 @@ import DifrenzialWarning from "./DifrenzialWarning";
 import EmergencyStart from "./EmergencyStart";
 
 function Defender({ changeToSection }) {
-  const [page, setPage] = useState(6);
+  const [page, setPage] = useState(7);
   const [startPage, setStartPage] = useState(0);
   const { data } = useData();
   const pagesMap = {
@@ -20,7 +20,7 @@ function Defender({ changeToSection }) {
     2: 0,
     3: 0,
     4: 0,
-    5: 1,
+    5: 0,
     6: 0,
     7: 1
   };

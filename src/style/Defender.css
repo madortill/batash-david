@@ -399,6 +399,78 @@
     }
 }
 
+/* DifrenzialWarning */
+.DifrenzialLockSvg-wrapper {
+    position: absolute;
+    top: 40%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+.galDifrenzialWarning {
+    position: relative;
+    top: 30rem;
+    right: 23rem;
+}
+
+.DifrenzialLightExplain {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    z-index: 1;
+    color: black;
+    background-color: #f49615;
+    width: 45rem;
+    padding: 1.5rem;
+    border-radius: 20px;
+    font-size: 2rem;
+    text-align: start;
+}
+
+.xbtn-DifrenzialLightExplain {
+    color: black;
+    font-size: 2rem;
+    position: relative;
+    bottom: 1rem;
+    left: 0rem;
+    margin-bottom: -1rem;
+}
+
+.difrenzialWarningSign-container {
+    position: relative;
+    top: 35rem;
+    right: 23rem;
+    display: flex;
+}
+
+.difrenzialWarningBubble {
+    margin: -1.5rem;
+}
+
+.difrenzialWarningSign {
+    margin: -1.5rem;
+    cursor: pointer;
+    animation: pulse 1.8s ease infinite;
+}
+@media (max-width: 1100px) {
+    .galDifrenzialWarning {
+        right: 16rem;
+    }
+    .difrenzialWarningSign-container {
+        right: 17rem;
+    }
+}
+
+/* DifrenzialLockSvg */
+.DifrenzialLockSvg {
+    fill: #f49615;
+}
+
+.DifrenzialLockSvg-wrapper {
+    width: 20rem;
+}
+
 /* ChangeGear */
 .hover-table-Gear {
     white-space: pre-line;
@@ -496,3 +568,4 @@
         left:17rem;
     }
 }
+
