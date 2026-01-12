@@ -1,3 +1,10 @@
+.title {
+    font-family: "rubik-black";
+    font-size: 2.6rem;
+    color: #073799;
+    margin-bottom: 2rem;
+}
+
 /* defenderStart */
 
 .defender-start-textBox {
@@ -453,10 +460,12 @@
     cursor: pointer;
     animation: pulse 1.8s ease infinite;
 }
+
 @media (max-width: 1100px) {
     .galDifrenzialWarning {
         right: 16rem;
     }
+
     .difrenzialWarningSign-container {
         right: 17rem;
     }
@@ -535,7 +544,7 @@
 .emergency-start-ignition {
     position: relative;
     top: 22rem;
-    left:25rem;
+    left: 25rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -556,16 +565,206 @@
         left: 0rem;
     }
 }
+
 @media (max-width: 1200px) {
     .galEmergencyStart {
         top: 7rem;
         right: 20rem;
     }
+
     .galEmergencyStart-page2 {
         top: -7rem;
     }
+
     .emergency-start-ignition {
-        left:17rem;
+        left: 17rem;
     }
 }
 
+/* EtcControl */
+.EtcControl-road {
+    height: 100vh;
+    position: absolute;
+    top: 0rem;
+    left: 30rem;
+}
+
+.EtcControlTitle {
+    position: relative;
+    top: 6rem;
+    left: 20rem;
+}
+
+.ice-container {
+    position: relative;
+    top: 5rem;
+    right: 7rem;
+    display: grid;
+    gap: 0rem 4rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.little-ice {
+    width: 16rem;
+}
+
+.left-corner-ice {
+    justify-self: end;
+    align-self: end;
+}
+
+.big-ice {
+    width: 22rem;
+}
+
+@media (max-width: 1350px) {
+    .EtcControl-road {
+        left: 20rem;
+    }
+
+    .EtcControlTitle {
+        left: 15rem;
+    }
+    .ice-container {
+        right: 3rem;
+        gap: 0rem 2rem;
+    }
+    
+}
+
+@media (max-width: 1200px) {
+    .EtcControl-road {
+        left: 10rem;
+    }
+
+    .EtcControlTitle {
+        left: 10rem;
+    }
+    .ice-container {
+        right: 2rem;
+        gap: 0rem 0rem;
+    }
+}
+@media (max-height: 850px) {
+    .little-ice {
+        width: 14rem;
+    }
+    
+    .big-ice {
+        width: 18rem;
+    }
+}
+
+/* InnerLock */
+
+.innerLock-img {
+    width:22rem;
+    margin: 0rem 2rem;
+    position: relative;
+    top: 6rem;
+}
+
+.innerLock-text {
+    color: black;
+    font-family: "assistant-bold";
+    font-size: 1.5rem;
+    position: relative;
+    top: 7rem;
+}
+
+.innerLockWarningSign-container {
+    position: relative;
+    bottom: 4rem;
+    right: 52rem;
+    display: flex;
+}
+.innerLockTitle {
+    position: relative;
+    top: 6rem;
+    left: 14rem;
+}
+
+.innerLock-nextBtn {
+    z-index: 1;
+}
+
+.galInnerLock {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+@media (max-width: 1300px) {
+    .innerLockWarningSign-container {
+        right: 43rem;
+    }
+    .innerLock-img {
+        width:20rem;
+        margin: 0rem 1rem;
+        top: 6rem;
+    }
+    .innerLockTitle {
+        left: 11rem;
+        font-size: 2.4rem;
+    }
+}
+@media (max-width: 1100px) {
+    .innerLockWarningSign-container {
+        right: 37.5rem;
+    }
+    .innerLock-img {
+        width:18rem;
+        margin: 0rem 0.5rem;
+        top: 6rem;
+    }
+    .innerLockTitle {
+        left: 8rem;
+        font-size: 2.2rem;
+    }
+}
+
+/* BatteryPlace */
+
+.animation {
+    animation: pulse 1.8s ease infinite;
+    cursor: pointer;
+}
+
+.galBatteryPlace {
+    position: absolute;
+    bottom: 7rem;
+    left: 20rem;
+}
+
+.driverSeat-battery {
+    width: 25rem;
+}
+
+.battery-content {
+    position: relative;
+    top: 16rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(0);
+  transition: transform 0.6s ease;
+}
+.battery-content2 {
+    transform: translateY(-8rem);
+}
+
+.battery-img {
+    width: 16rem;
+}
+@media (max-width: 1400px) {
+    .galBatteryPlace {
+        left: 10rem;
+    }
+}
+@media (max-width: 1100px) {
+    .galBatteryPlace {
+        left: 1rem;
+    }
+}

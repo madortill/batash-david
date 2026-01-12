@@ -9,9 +9,12 @@ import DifrenzialChoose from "./DifrenzialChoose";
 import ChangeGear from "./ChangeGear";
 import DifrenzialWarning from "./DifrenzialWarning";
 import EmergencyStart from "./EmergencyStart";
+import EtcControl from "./EtcControl";
+import InnerLock from "./InnerLock";
+import BatteryPlace from "./BatteryPlace";
 
 function Defender({ changeToSection }) {
-  const [page, setPage] = useState(7);
+  const [page, setPage] = useState(0);
   const [startPage, setStartPage] = useState(0);
   const { data } = useData();
   const pagesMap = {
@@ -77,6 +80,9 @@ function Defender({ changeToSection }) {
       {page == 5 && (<DifrenzialWarning changeToPage={handleChangePage} startPage={startPage}/>)}
       {page == 6 && (<ChangeGear changeToPage={handleChangePage}/>)}
       {page == 7 && (<EmergencyStart changeToPage={handleChangePage} startPage={startPage}/>)}
+      {page == 8 && <EtcControl changeToPage={handleChangePage}/>}
+      {page == 9 && <InnerLock changeToPage={handleChangePage}/>}
+      {page === 10 && <BatteryPlace changeToPage={handleChangePage}/>}
     </div>
   );
 }

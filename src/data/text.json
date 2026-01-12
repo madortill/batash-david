@@ -326,6 +326,30 @@
                 "gal5": "images/galBubble/he/galBubbleEmergency5.svg",
                 "startCar": "התנעת הרכב"
             }
+        ],
+        "EtcControl": [
+            {
+                "title": "מערכת בקרת אחיזה ETC",
+                "ice1": "images/he/ice1.svg",
+                "ice2": "images/he/ice2.svg",
+                "ice3": "images/he/ice3.svg",
+                "ice4": "images/he/ice4.svg"
+            }
+        ],
+        "InnerLock" : [
+            {
+                "title": "מנגנון נעילה פנימי - לצורך מבצעי",
+                "text": "בכל מקרה של נסיעה לצורך מבצעי תבוצע נעילה ע”פ הגדרת מפקד",
+                "bubble": "images/he/pressMe-buble-he.svg",
+                "bubbleRed": "images/galBubble/he/bubble-innerLock.svg"
+            }
+        ],
+        "BatteryPlace" : [
+            {
+                "text": "המצבר ממוקם מתחת למושב הנהג",
+                "bubble": "images/galBubble/he/battary-bubble.svg",
+                "bubble1": "images/galBubble/he/battary-bubble1.svg"
+            }
         ]
     }
 }
