@@ -9,7 +9,7 @@ import Defender from './Defender';
 
 
 function Content() {
-    const [page, setPage] = useState(2);
+    const [page, setPage] = useState(0);
     const [navSection, setNavSection] = useState(0);
     const [knowCarLastPage, setKnowCarLastPage] = useState(0);
     const handleChangeSection = (newPage) => {
