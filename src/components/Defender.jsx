@@ -12,6 +12,7 @@ import EmergencyStart from "./EmergencyStart";
 import EtcControl from "./EtcControl";
 import InnerLock from "./InnerLock";
 import BatteryPlace from "./BatteryPlace";
+import DefenderEnd from "./DefenderEnd";
 
 function Defender({ changeToSection }) {
   const [page, setPage] = useState(0);
@@ -82,7 +83,8 @@ function Defender({ changeToSection }) {
       {page == 7 && (<EmergencyStart changeToPage={handleChangePage} startPage={startPage}/>)}
       {page == 8 && <EtcControl changeToPage={handleChangePage}/>}
       {page == 9 && <InnerLock changeToPage={handleChangePage}/>}
-      {page === 10 && <BatteryPlace changeToPage={handleChangePage}/>}
+      {page == 10 && <BatteryPlace changeToPage={handleChangePage}/>}
+      {page == 11 && <DefenderEnd changeToSection={handleChangeSection} changeToPage={handleChangePage}/>}
     </div>
   );
 }

@@ -12,6 +12,7 @@ function BatteryPlace({changeToPage}) {
     const { data } = useData();
     const nextBtn = data.general[1].text;
     const backBtnText = data.general[0].text;
+    const text = data.BatteryPlace[1].text;
     const previousPage = () => {
         changeToPage(9);
       };
@@ -44,8 +45,11 @@ function BatteryPlace({changeToPage}) {
         <img src={galBubble} className="galTechnicalBubble" alt="galBubble" />
         <img className="galTechnicalImg" src={galGalgal} alt="galGalgal" />
       </div>}
+      {page == 2 && <div className='batteyExplain'>
+        <p>{text}</p>
+        </div>}
       <button
-        className={`nextBtn innerLock-nextBtn ${page === 2 ? "" : "nextBtnDisable"}`}
+        className={`nextBtn ${page === 2 ? "" : "nextBtnDisable"}`}
         onClick={nextPage}
       >
         {nextBtn}

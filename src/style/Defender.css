@@ -626,11 +626,12 @@
     .EtcControlTitle {
         left: 15rem;
     }
+
     .ice-container {
         right: 3rem;
         gap: 0rem 2rem;
     }
-    
+
 }
 
 @media (max-width: 1200px) {
@@ -641,16 +642,18 @@
     .EtcControlTitle {
         left: 10rem;
     }
+
     .ice-container {
         right: 2rem;
         gap: 0rem 0rem;
     }
 }
+
 @media (max-height: 850px) {
     .little-ice {
         width: 14rem;
     }
-    
+
     .big-ice {
         width: 18rem;
     }
@@ -659,7 +662,7 @@
 /* InnerLock */
 
 .innerLock-img {
-    width:22rem;
+    width: 22rem;
     margin: 0rem 2rem;
     position: relative;
     top: 6rem;
@@ -679,6 +682,7 @@
     right: 52rem;
     display: flex;
 }
+
 .innerLockTitle {
     position: relative;
     top: 6rem;
@@ -696,29 +700,35 @@
     right: 50%;
     transform: translate(50%, -50%);
 }
+
 @media (max-width: 1300px) {
     .innerLockWarningSign-container {
         right: 43rem;
     }
+
     .innerLock-img {
-        width:20rem;
+        width: 20rem;
         margin: 0rem 1rem;
         top: 6rem;
     }
+
     .innerLockTitle {
         left: 11rem;
         font-size: 2.4rem;
     }
 }
+
 @media (max-width: 1100px) {
     .innerLockWarningSign-container {
         right: 37.5rem;
     }
+
     .innerLock-img {
-        width:18rem;
+        width: 18rem;
         margin: 0rem 0.5rem;
         top: 6rem;
     }
+
     .innerLockTitle {
         left: 8rem;
         font-size: 2.2rem;
@@ -749,8 +759,9 @@
     flex-direction: column;
     align-items: center;
     transform: translateY(0);
-  transition: transform 0.6s ease;
+    transition: transform 0.6s ease;
 }
+
 .battery-content2 {
     transform: translateY(-8rem);
 }
@@ -758,13 +769,130 @@
 .battery-img {
     width: 16rem;
 }
+
+.batteyExplain {
+    color: #fff;
+    background-color: #323232;
+    padding: 4rem;
+    font-size: 2rem;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
 @media (max-width: 1400px) {
     .galBatteryPlace {
         left: 10rem;
     }
 }
+
 @media (max-width: 1100px) {
     .galBatteryPlace {
         left: 1rem;
+    }
+}
+
+/* DefenderEnd */
+.defenderEnd-content {
+    color: #fff;
+    background-color: #073799;
+    text-align: start;
+    font-size: 2rem;
+    padding: 4rem 4rem 1rem 5rem;
+    white-space: pre-line;
+    line-height: 1.6;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+.defenderEnd-info-btn {
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    background-color: #f5a623;
+    color: #fff;
+    font-family: "assistant-bold";
+    font-size: 2rem;
+    line-height: 3.2rem;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 3px 0 #d48b12;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    position: absolute;
+    top: 10rem;
+    left: 2rem;
+}
+
+
+.defenderEnd-info-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 0 #d48b12;
+}
+
+.defenderEnd-info-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 0 #d48b12;
+}
+
+.defenderEnd-info-box {
+    position: absolute;
+    top: 15rem;
+    left: 0.5rem;
+    background-color: #f5a623;
+    border: 2px solid #FFF2B4;
+    border-radius: 0.3rem;
+    padding: 0.8rem 1.2rem;
+    font-size: 1.2rem;
+    color: #FFF2B4;
+    white-space: nowrap;
+    animation: infoFadeIn 0.25s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    font-family: "assistant-bold";
+}
+
+.defenderEnd-car {
+    height: 5rem;
+    margin-top: 2rem;
+}
+
+
+@keyframes infoFadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(0.5rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 1100px) {
+    .defenderEnd-content {
+        font-size: 1.6rem;
+        max-width: 45rem;
+        padding: 3rem 3rem 1rem 5rem;
+    }
+
+    .defenderEnd-car {
+        height: 4rem;
+        margin-top: 2rem;
+    }
+
+    .defenderEnd-info-btn {
+        top: 7rem;
+        left: 2rem;
+    }
+
+    .defenderEnd-info-box {
+        top: 11rem;
+        left: 0.5rem;
     }
 }
