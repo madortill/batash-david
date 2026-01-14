@@ -75,3 +75,59 @@
     
     }
 }
+
+/* FrontSeren */
+
+.frontSeren-info-btn {
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    background-color: #f5a623;
+    color: #fff;
+    font-family: "assistant-bold";
+    font-size: 2rem;
+    line-height: 3.2rem;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 3px 0 #d48b12;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+}
+
+
+.frontSeren-info-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 0 #d48b12;
+}
+
+.frontSeren-info-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 0 #d48b12;
+}
+
+.serenPopup {
+    background-color: rgba(7, 55, 153, 1);
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    padding: 3.5rem 2rem 2rem 2rem;
+    display: flex;
+    border-radius: 10px;
+}
+
+.xbtn-seren {
+    font-size: 1.9rem;
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+}
+
+.hover-table-highlix {
+    position: relative;
+    top: 0rem;
+    width: 30rem;
+}

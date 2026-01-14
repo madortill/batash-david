@@ -4,9 +4,10 @@ import { useData } from "../context/DataContext";
 import "../style/Highlix.css";
 import HighlixStart from "./HighlixStart";
 import HighlixVideo from './HighlixVideo';
+import FrontSeren from './FrontSeren';
 
 function Highlix({ changeToSection, startingPage }) {
-    const [page, setPage] = useState(0);
+    const [page, setPage] = useState(2);
   const [startPage, setStartPage] = useState(0);
   const { data } = useData();
   const pagesMap = {
@@ -35,6 +36,7 @@ function Highlix({ changeToSection, startingPage }) {
     <div className='Highlix'>
      {page == 0 && <HighlixStart changeToPage={handleChangePage} changeToSection={handleChangeSection} />}
      {page == 1 && <HighlixVideo changeToPage={handleChangePage} startPage={startPage} />}
+     {page == 2 && <FrontSeren changeToPage={handleChangePage}/>}
     </div>
   )
 }

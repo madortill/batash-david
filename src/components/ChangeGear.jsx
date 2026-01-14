@@ -37,7 +37,7 @@ function ChangeGear({changeToPage}) {
                   key={colIdx}
                   className={`
                     ${rowIdx === 0 ? "first-row" : ""}
-                    ${rowIdx === 0 || colIdx === 0 ? "bold-cell" : ""}
+                    ${rowIdx === 0 ? "bold-cell" : ""}
                   `}
                 >
                   {cellText}
