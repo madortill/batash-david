@@ -6,6 +6,7 @@ import backBtn from "../assets/images/backBtn.svg";
 import galGalgal from "../assets/images/galGalgal.png";
 
 function DefenderVideo({ changeToSection, changeToPage, startPage }) {
+  const [isVideoEnded, setIsVideoEnded] = useState(false);
   const [page, setPage] = useState(startPage);
   const { data } = useData();
   const nextBtn = data.general[1].text;
@@ -24,11 +25,13 @@ function DefenderVideo({ changeToSection, changeToPage, startPage }) {
     }
   };
   const nextPage = () => {
-    if (page === 0) {
-      setPage(1);
-    } else {
-      changeToPage(2);
-    }
+    if (isVideoEnded) {
+      if (page === 0) {
+        setPage(1);
+      } else {
+        changeToPage(2);
+      }
+     }
   };
   return (
     <div className="DefenderVideo">
@@ -42,7 +45,7 @@ function DefenderVideo({ changeToSection, changeToPage, startPage }) {
         <p className="backBtnText">{backBtnText}</p>
       </div>
       <p className="defenderVideoTitle">{defenderVideoTitle}</p>
-      {page === 0 && <video className="defenderVideoSrc" src={defenderVideoSrc} alt="defenderVideo" controls autoPlay muted></video>}
+      {page === 0 && <video className="defenderVideoSrc" src={defenderVideoSrc} alt="defenderVideo" onEnded={() => setIsVideoEnded(true)} controls autoPlay muted></video>}
       {page === 1 && <div className="defender-video-text-container">
         <p className="defender-video-text-title">{defenderTitle1}</p>
         <p className="defender-video-text">{defenderText1}</p>
@@ -53,7 +56,7 @@ function DefenderVideo({ changeToSection, changeToPage, startPage }) {
         <img src={data.DefenderVideo[1].galSrc} className="galTechnicalBubble" alt="galBubble" />
         <img className="galTechnicalImg" src={galGalgal} alt="galGalgal" />
       </div>}
-      <button className="nextBtn" onClick={nextPage}>
+      <button className={`nextBtn ${isVideoEnded ? "" : "nextBtnDisable"}`} onClick={nextPage}>
         {nextBtn}
       </button>
     </div>

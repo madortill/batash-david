@@ -13,7 +13,7 @@ function DefenderStart({ changeToSection, changeToPage }) {
   const text1 = data.DefenderStart[0].text1;
   const text2 = data.DefenderStart[0].text2;
   const previousPage = () => {
-    changeToSection(1);
+    changeToSection(1, true);
   };
   const nextPage = () => {
     changeToPage(1);

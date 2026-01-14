@@ -14,8 +14,8 @@ import InnerLock from "./InnerLock";
 import BatteryPlace from "./BatteryPlace";
 import DefenderEnd from "./DefenderEnd";
 
-function Defender({ changeToSection }) {
-  const [page, setPage] = useState(0);
+function Defender({ changeToSection, startingPage}) {
+  const [page, setPage] = useState(startingPage);
   const [startPage, setStartPage] = useState(0);
   const { data } = useData();
   const pagesMap = {
@@ -41,8 +41,8 @@ function Defender({ changeToSection }) {
     }
   };
 
-  const handleChangeSection = (section) => {
-    if (changeToSection) changeToSection(section);
+  const handleChangeSection = (section, returnToLast = false) => {
+    if (changeToSection) changeToSection(section, returnToLast);
   };
 
   return (

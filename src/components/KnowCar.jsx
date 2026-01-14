@@ -4,17 +4,13 @@ import { useState, useEffect } from "react";
 import Introduction from './Introduction';
 import TechnicalData from './TechnicalData';
 
-function KnowCar({ changeToSection, lastPage, setLastPage }) {
-  const [page, setPage] = useState(lastPage);
+function KnowCar({ changeToSection, startingPage }) {
+  const [page, setPage] = useState(startingPage);
   const [startPage, setStartPage] = useState(0);
     const handleChangePage = (data) => {
       setStartPage(1);
       setPage(data);
-      setLastPage(data);
     };
-    useEffect(() => {
-      setPage(lastPage);
-    }, [lastPage]);
   return (
     <div className='KnowCar'>
       {page == 0 && <Introduction startPage={startPage}  onSendData={handleChangePage}/>}

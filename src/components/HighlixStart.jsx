@@ -8,8 +8,9 @@ function HighlixStart({changeToSection, changeToPage}) {
     const { data } = useData();
   const nextBtn = data.general[1].text;
   const backBtnText = data.general[0].text;
+  const title = data.HighlixStart[0].title;
   const previousPage = () => {
-    changeToSection(2);
+    changeToSection(2, true);
   };
   const nextPage = () => {
     changeToPage(1);
@@ -25,8 +26,9 @@ function HighlixStart({changeToSection, changeToPage}) {
         />
         <p className="backBtnText">{backBtnText}</p>
       </div>
+      <p className='title title-highlix'>{title}</p>
       <button
-        className={`nextBtn ${pressedInfo ? "" : "nextBtnDisable"}`}
+        className="nextBtn"
         onClick={nextPage}
       >
         {nextBtn}

@@ -2,8 +2,10 @@ import React from 'react'
 import { useState } from "react";
 import { useData } from "../context/DataContext";
 import "../style/Highlix.css";
+import HighlixStart from "./HighlixStart";
+import HighlixVideo from './HighlixVideo';
 
-function Highlix({ changeToSection }) {
+function Highlix({ changeToSection, startingPage }) {
     const [page, setPage] = useState(0);
   const [startPage, setStartPage] = useState(0);
   const { data } = useData();
@@ -26,12 +28,13 @@ function Highlix({ changeToSection }) {
     }
   };
 
-  const handleChangeSection = (section) => {
-    if (changeToSection) changeToSection(section);
+  const handleChangeSection = (section, returnToLast = false) => {
+    if (changeToSection) changeToSection(section, returnToLast);
   };
   return (
     <div className='Highlix'>
-      
+     {page == 0 && <HighlixStart changeToPage={handleChangePage} changeToSection={handleChangeSection} />}
+     {page == 1 && <HighlixVideo changeToPage={handleChangePage} startPage={startPage} />}
     </div>
   )
 }

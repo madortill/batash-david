@@ -1,41 +1,56 @@
-import React from 'react'
+import React from "react";
 import "../style/Content.css";
 import { useState } from "react";
 import { Navigate, useNavigate } from "react-router-dom";
 import ContentStart from "./ContentStart";
 import NavBar from "./NavBar";
-import KnowCar from './KnowCar';
-import Defender from './Defender';
-
+import KnowCar from "./KnowCar";
+import Defender from "./Defender";
+import Highlix from "./Highlix";
 
 function Content() {
-    const [page, setPage] = useState(0);
-    const [navSection, setNavSection] = useState(0);
-    const [knowCarLastPage, setKnowCarLastPage] = useState(0);
-    const handleChangeSection = (newPage) => {
-      if (newPage === 4) {
-        setPage(0);
-        return;
-      }
-      setPage(newPage);
+  const [section, setSection] = useState(0);
+  const [sectionStartPages, setSectionStartPages] = useState({});
+  const [navSection, setNavSection] = useState(0);
+  const SECTION_RETURN_PAGE_MAP = {
+    1: 1, // KnowCar – עמוד אחרון
+    2: 11, // Defender – עמוד סיום
+    3: 0, // Highlix – לדוגמה
+  };
+  const handleChangeSection = (targetSection, returnToLast = false) => {
+    // חזרה לתפריט הראשי
+    if (targetSection === 4) {
+      setSection(0);
+      return;
+    }
 
-      setNavSection(prev => {
-        if (newPage > prev) {
-          return newPage; 
-        }
-        return prev; 
-      });
-  
-      };
+    setSection(targetSection);
+
+    setSectionStartPages((prev) => ({
+      ...prev,
+      [targetSection]: returnToLast
+        ? SECTION_RETURN_PAGE_MAP[targetSection] ?? 0
+        : 0,
+    }));
+
+    setNavSection((prev) => (targetSection > prev ? targetSection : prev));
+  };
   return (
-    <div className='Content'>
-      {page === 0 && <ContentStart changeToSection={handleChangeSection}/>}
-      {page === 1 && <KnowCar changeToSection={handleChangeSection}  lastPage={knowCarLastPage}
-          setLastPage={setKnowCarLastPage} />}
-      {page === 2 && <Defender changeToSection={handleChangeSection} />}
-      {page !== 0 && <NavBar navSection={navSection} setNavSection={setNavSection} />}
+    <div className="Content">
+      {section === 0 && <ContentStart changeToSection={handleChangeSection} />}
+      {section === 1 && (
+        <KnowCar
+          changeToSection={handleChangeSection}
+          startingPage={sectionStartPages[1] ?? 0}
+        />
+      )}
+      {section === 2 && <Defender changeToSection={handleChangeSection} startingPage={sectionStartPages[2] ?? 0} />}
+      {section === 3 && <Highlix changeToSection={handleChangeSection} startingPage={sectionStartPages[3] ?? 0} />}
+      {section !== 0 && (
+        <NavBar navSection={navSection} setNavSection={setNavSection} />
+      )}
     </div>
-  )
+  );
 }
 
-export default Content
+export default Content;
