@@ -9,7 +9,7 @@ import Defender from "./Defender";
 import Highlix from "./Highlix";
 
 function Content() {
-  const [section, setSection] = useState(3);
+  const [section, setSection] = useState(0);
   const [sectionStartPages, setSectionStartPages] = useState({});
   const [navSection, setNavSection] = useState(0);
   const SECTION_RETURN_PAGE_MAP = {

@@ -7,7 +7,7 @@ import HighlixVideo from './HighlixVideo';
 import FrontSeren from './FrontSeren';
 
 function Highlix({ changeToSection, startingPage }) {
-    const [page, setPage] = useState(2);
+    const [page, setPage] = useState(0);
   const [startPage, setStartPage] = useState(0);
   const { data } = useData();
   const pagesMap = {
