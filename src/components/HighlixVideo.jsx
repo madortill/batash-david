@@ -23,7 +23,7 @@ function HighlixVideo({startPage, changeToPage}) {
     }
   };
   const nextPage = () => {
-    if (isVideoEnded) {  
+    if (isVideoEnded || startPage > 0) {  
         if (page === 2) {
             changeToPage(2);
         } else {
@@ -56,7 +56,7 @@ function HighlixVideo({startPage, changeToPage}) {
         <img className="galTechnicalImg galHighlixRed" src={galGalgal} alt="galGalgal" />
       </div>}
       
-      <button className={`nextBtn ${isVideoEnded ? "" : "nextBtnDisable"}`} onClick={nextPage}>
+      <button className={`nextBtn ${(isVideoEnded || startPage > 0) ? "" : "nextBtnDisable"}`} onClick={nextPage}>
         {nextBtn}
       </button>
     </div>

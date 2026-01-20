@@ -9,6 +9,7 @@
         left: 15rem;
     }
 }
+
 @media (max-width: 1100px) {
     .title-highlix {
         left: 10rem;
@@ -51,7 +52,7 @@
 }
 
 .galHighlixRed {
-   height: 11rem;
+    height: 11rem;
 }
 
 
@@ -62,17 +63,19 @@
         font-size: 2.4rem;
     }
 }
+
 @media (max-width: 1200px) {
     .title-highlixVideo {
         top: 10rem;
         left: 7rem;
     }
+
     .highlix-video-text-container {
         width: 38rem;
         font-size: 1.6rem;
-    
+
         padding: 1.5rem;
-    
+
     }
 }
 
@@ -130,4 +133,158 @@
     position: relative;
     top: 0rem;
     width: 30rem;
+}
+
+/* SwitchBoard */
+
+.switch-img {
+    height: 15rem;
+    margin: 0rem 0.3rem;
+    cursor: pointer;
+}
+
+.switches-container {
+    display: flex;
+    gap: 0.6rem;
+}
+
+.galSwitchBoard {
+    position: relative;
+    top: 10rem;
+    right: 36rem;
+}
+
+.switch-wrapper {
+    position: relative;
+    top: 10rem;
+    display: inline-block;
+}
+
+.switch-text-box {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 0rem;
+    z-index: 10;
+    background-color: #ffffff;
+    border: 3px solid #0b3fa5;
+    border-radius: 16px;
+    padding: 1rem 1.5rem 1rem 1rem;
+    width: fit-content;
+    max-width: 35rem;
+    direction: rtl;
+    text-align: right;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* העיגול עם המספר */
+.switch-number {
+    position: absolute;
+    top: -14px;
+    right: -14px;
+    width: 36px;
+    height: 36px;
+    background-color: #0b3fa5;
+    color: #ffffff;
+    border-radius: 50%;
+    font-family: "assistant-bold";
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* תוכן */
+.switch-text-content {
+    display: flex;
+    flex-direction: column;
+}
+
+/* כותרת */
+.switch-title {
+    font-family: "assistant-bold";
+    font-size: 1rem;
+    color: #000000;
+    margin: 0;
+}
+
+.switch-title span {
+    font-family: "assistant-bold";
+}
+
+/* טקסט רגיל */
+.switch-text {
+    font-family: "assistant";
+    font-size: 1rem;
+    color: #000000;
+    margin: 0;
+    line-height: 1.2;
+}
+
+@media (max-width: 1400px) {
+    .galSwitchBoard {
+        top: 4rem;
+        right: 29rem;
+    }
+
+    .switch-img {
+        height: 14rem;
+        margin: 0rem 0rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .galSwitchBoard {
+        top: 4rem;
+        right: 25rem;
+    }
+
+    .switch-img {
+        height: 12rem;
+    }
+
+    .switch-text-box {
+        padding: 1rem 1rem 0.5rem 0.5rem;
+        width: fit-content;
+    }
+
+}
+
+/* Handbrake */
+
+.handbrake-text {
+    color: #000;
+    text-align: right;
+    font-family: Assistant;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    position: relative;
+    top: 15rem;
+    width: 30rem;
+    right: 10rem;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+    justify-items: center;
+    position: relative;
+    top: 4rem;
+}
+
+/* כל כרטיס תופס 2 עמודות */
+.cards-grid>.flip-card {
+    grid-column: span 2;
+}
+
+/* בשורה השנייה – למרכז: מתחילים בעמודה 2 */
+.cards-grid>.flip-card:nth-child(4) {
+    grid-column: 2 / span 2;
+}
+
+.cards-grid>.flip-card:nth-child(5) {
+    grid-column: 4 / span 2;
 }
