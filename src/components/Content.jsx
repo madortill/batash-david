@@ -15,7 +15,7 @@ function Content() {
   const SECTION_RETURN_PAGE_MAP = {
     1: 1, // KnowCar – עמוד אחרון
     2: 11, // Defender – עמוד סיום
-    3: 0, // Highlix – לדוגמה
+    3: 6, // Highlix – לדוגמה
   };
   const handleChangeSection = (targetSection, returnToLast = false) => {
     // חזרה לתפריט הראשי

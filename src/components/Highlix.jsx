@@ -7,9 +7,11 @@ import HighlixVideo from './HighlixVideo';
 import FrontSeren from './FrontSeren';
 import SwitchBoard from './SwitchBoard';
 import Handbrake from './Handbrake';
+import CarSystem from './CarSystem';
+import HighlixDoors from './HighlixDoors';
 
 function Highlix({ changeToSection, startingPage }) {
-    const [page, setPage] = useState(0);
+    const [page, setPage] = useState(startingPage);
   const [startPage, setStartPage] = useState(0);
   const { data } = useData();
   const pagesMap = {
@@ -19,8 +21,7 @@ function Highlix({ changeToSection, startingPage }) {
     3: 0,
     4: 1,
     5: 0,
-    6: 0,
-    7: 1
+    6: 0
   };
   const handleChangePage = (targetPage, returnToLast = false) => {
     setPage(targetPage);
@@ -41,6 +42,8 @@ function Highlix({ changeToSection, startingPage }) {
      {page == 2 && <FrontSeren changeToPage={handleChangePage}/>}
      {page == 3 && <SwitchBoard changeToPage={handleChangePage}/>}
      {page == 4 && <Handbrake changeToPage={handleChangePage} startPage={startPage}/>}
+     {page == 5 && <CarSystem changeToPage={handleChangePage}/>}
+     {page == 6 && <HighlixDoors changeToPage={handleChangePage} changeToSection={handleChangeSection}/>}
     </div>
   )
 }
