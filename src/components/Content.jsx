@@ -7,9 +7,10 @@ import NavBar from "./NavBar";
 import KnowCar from "./KnowCar";
 import Defender from "./Defender";
 import Highlix from "./Highlix";
+import Accident from "./Accident";
 
 function Content() {
-  const [section, setSection] = useState(0);
+  const [section, setSection] = useState(4);
   const [sectionStartPages, setSectionStartPages] = useState({});
   const [navSection, setNavSection] = useState(0);
   const SECTION_RETURN_PAGE_MAP = {
@@ -19,7 +20,7 @@ function Content() {
   };
   const handleChangeSection = (targetSection, returnToLast = false) => {
     // חזרה לתפריט הראשי
-    if (targetSection === 4) {
+    if (targetSection === 5) {
       setSection(0);
       return;
     }
@@ -46,6 +47,7 @@ function Content() {
       )}
       {section === 2 && <Defender changeToSection={handleChangeSection} startingPage={sectionStartPages[2] ?? 0} />}
       {section === 3 && <Highlix changeToSection={handleChangeSection} startingPage={sectionStartPages[3] ?? 0} />}
+      {section === 4 && <Accident changeToSection={handleChangeSection} startingPage={sectionStartPages[4] ?? 0} />}
       {section !== 0 && (
         <NavBar navSection={navSection} setNavSection={setNavSection} />
       )}

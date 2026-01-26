@@ -1,0 +1,458 @@
+.title-AccidentStart {
+    position: relative;
+    top: 8rem;
+    font-size: 3.5rem;
+}
+
+.crashImg {
+    position: relative;
+    top: 12rem;
+    height: 25rem;
+}
+
+.accident-svg g[data-id] {
+    cursor: pointer;
+    transition: filter 0.3s, opacity 0.3s;
+}
+
+.accident-svg g.disabled {
+    filter: grayscale(100%);
+    pointer-events: none;
+}
+
+.AccidentSvg-wrapper {
+    width: 35rem;
+    position: relative;
+    top: 7rem;
+}
+
+.galAccidentDebrief {
+    position: relative;
+    bottom: 4rem;
+    right: 28rem;
+}
+
+@media (max-width: 1100px) {
+    .galAccidentDebrief {
+        right: 23rem;
+    }
+}
+
+/* חלון מודאל */
+.accident-modal {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    width: 45rem;
+    max-width: 90%;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 2.5rem 2rem 2rem 2rem;
+    color: #000000;
+    z-index: 100;
+    white-space: pre-line;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* כפתור X */
+.accident-modal .close-btn {
+    position: absolute;
+    top: 0.8rem;
+    right: 1.2rem;
+    background: none;
+    border: none;
+    font-size: 2.2rem;
+    color: black;
+    cursor: pointer;
+    font-family: "fredoka";
+}
+
+/* כותרת */
+.accident-modal h3 {
+    margin: 0 0 1.5rem 0;
+    font-family: "assistant-bold";
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+/* תוכן */
+.modal-content {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+/* טקסט */
+.modal-content p {
+    font-family: "assistant";
+    font-size: 1.4rem;
+    line-height: 1.6;
+    margin: 0;
+    flex: 1;
+}
+
+/* תמונה */
+.modal-content img {
+    width: 14rem;
+    height: auto;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+/* ניווט שלבים */
+.modal-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+/* חיצים */
+.modal-nav button {
+    background: none;
+    border: none;
+    font-size: 2.4rem;
+    color: black;
+    cursor: pointer;
+    transition: transform 0.25s ease;
+}
+
+.modal-nav button:hover {
+    transform: scale(1.3);
+}
+
+.AccidentSvg-1 {
+    fill: #0f0d0c;
+}
+
+.AccidentSvg-2 {
+    fill: #b78f60;
+}
+
+.AccidentSvg-3 {
+    fill: #6a7d97;
+}
+
+.AccidentSvg-4 {
+    fill: #474747;
+}
+
+.AccidentSvg-5 {
+    fill: #bfd9cb;
+}
+
+.AccidentSvg-6 {
+    fill: #ac8252;
+}
+
+.AccidentSvg-7 {
+    fill: #f3e2a6;
+}
+
+.AccidentSvg-8 {
+    fill: #f5e0a1;
+}
+
+.AccidentSvg-9 {
+    fill: #bc753a;
+}
+
+.AccidentSvg-10 {
+    fill: #464546;
+}
+
+.AccidentSvg-11 {
+    fill: #0d0c0b;
+}
+
+.AccidentSvg-12 {
+    fill: #475873;
+}
+
+.AccidentSvg-13 {
+    fill: #9a7246;
+}
+
+.AccidentSvg-14 {
+    fill: #e68f55;
+}
+
+.AccidentSvg-15 {
+    fill: #4f617d;
+}
+
+.AccidentSvg-16 {
+    fill: #141413;
+}
+
+.AccidentSvg-17 {
+    fill: #4a4a4a;
+}
+
+.AccidentSvg-18 {
+    fill: #654d30;
+}
+
+.AccidentSvg-19 {
+    fill: #afb9c0;
+}
+
+.AccidentSvg-20 {
+    fill: #f18c4f;
+}
+
+.AccidentSvg-21 {
+    fill: #0c0c0c;
+}
+
+.AccidentSvg-22 {
+    fill: #2a3044;
+}
+
+.AccidentSvg-23 {
+    fill: #070808;
+}
+
+.AccidentSvg-24 {
+    fill: #ed8447;
+}
+
+.AccidentSvg-25 {
+    fill: #fff;
+}
+
+.AccidentSvg-26 {
+    fill: #abdced;
+}
+
+.AccidentSvg-27 {
+    fill: #807f80;
+}
+
+.AccidentSvg-28 {
+    fill: #6e7f96;
+}
+
+.AccidentSvg-29 {
+    fill: #425571;
+}
+
+.AccidentSvg-30 {
+    fill: #e0bf8f;
+}
+
+.AccidentSvg-31 {
+    fill: #0f0e0d;
+}
+
+.AccidentSvg-32 {
+    fill: #2d3447;
+}
+
+.AccidentSvg-33 {
+    fill: #f7e2a0;
+}
+
+.AccidentSvg-34 {
+    fill: #5f472d;
+}
+
+.AccidentSvg-35 {
+    fill: #825c33;
+}
+
+.AccidentSvg-36 {
+    fill: #434242;
+}
+
+.AccidentSvg-37 {
+    fill: #eac795;
+}
+
+.AccidentSvg-38 {
+    fill: #81848d;
+}
+
+.AccidentSvg-39 {
+    fill: #435672;
+}
+
+.AccidentSvg-40 {
+    fill: #11100e;
+}
+
+.AccidentSvg-41 {
+    fill: #b18959;
+}
+
+.AccidentSvg-42 {
+    fill: #f7e2a1;
+}
+
+.AccidentSvg-43 {
+    fill: #674c2b;
+}
+
+.AccidentSvg-44 {
+    fill: #0b0a09;
+}
+
+.AccidentSvg-45 {
+    fill: #100e0c;
+}
+
+.AccidentSvg-46 {
+    fill: #495a76;
+}
+
+.AccidentSvg-47 {
+    fill: #efdda4;
+}
+
+.AccidentSvg-48 {
+    fill: #db763c;
+}
+
+.AccidentSvg-49 {
+    fill: #282e3e;
+}
+
+.AccidentSvg-50 {
+    fill: #3e3e3d;
+}
+
+.AccidentSvg-51 {
+    fill: #454445;
+}
+
+.AccidentSvg-52 {
+    fill: #f6e1a1;
+}
+
+.AccidentSvg-53 {
+    fill: #eb8e50;
+}
+
+.AccidentSvg-54 {
+    fill: #886238;
+}
+
+.AccidentSvg-55 {
+    fill: #667691;
+}
+
+.AccidentSvg-56 {
+    fill: #5e7190;
+}
+
+.AccidentSvg-57 {
+    fill: #7586a1;
+}
+
+.AccidentSvg-58 {
+    fill: #1e232d;
+}
+
+.AccidentSvg-59 {
+    fill: #0b0b0b;
+}
+
+.AccidentSvg-60 {
+    fill: #808ea5;
+}
+
+.AccidentSvg-61 {
+    fill: #09090a;
+}
+
+.AccidentSvg-62 {
+    fill: #101111;
+}
+
+.AccidentSvg-63 {
+    fill: #516380;
+}
+
+.AccidentSvg-64 {
+    fill: #b4dfed;
+}
+
+.AccidentSvg-65 {
+    fill: #4a5c75;
+}
+
+.AccidentSvg-66 {
+    fill: #e8955b;
+}
+
+.AccidentSvg-67 {
+    fill: #464646;
+}
+
+.AccidentSvg-68 {
+    fill: #e3a767;
+}
+
+.AccidentSvg-69 {
+    fill: #b18c5d;
+}
+
+.AccidentSvg-70 {
+    fill: #7d7c7c;
+}
+
+.AccidentSvg-71 {
+    fill: #727684;
+}
+
+.AccidentSvg-72 {
+    fill: #f2ce57;
+}
+
+.AccidentSvg-73 {
+    fill: #484748;
+}
+
+.AccidentSvg-74 {
+    fill: #828282;
+}
+
+.AccidentSvg-75 {
+    fill: #f3d991;
+}
+
+.AccidentSvg-76 {
+    fill: #b2bbc2;
+}
+
+.AccidentSvg-77 {
+    fill: #0a0a0a;
+}
+
+.AccidentSvg-78 {
+    fill: #f6e09f;
+}
+
+.AccidentSvg-79 {
+    fill: #b38a59;
+}
+
+.AccidentSvg-80 {
+    fill: #11100f;
+}
+
+.AccidentSvg-81 {
+    fill: #495b76;
+}
+
+.AccidentSvg-82 {
+    fill: #2d3347;
+}
+
+.AccidentSvg-83 {
+    fill: #5c6d86;
+}
+
+.AccidentSvg-84 {
+    fill: #f7e1a3;
+}

@@ -74,7 +74,6 @@ function HighlixDoors({ changeToPage, changeToSection }) {
       </div>
 
       {activeButton !== null && <div className="blur-background"></div>}
-      {activeButton !== null && <div className="blur-background"></div>}
 
       {activeButton !== null && (
         <div className="door-text-box">
