@@ -28,10 +28,28 @@
     font-family: "assistant-bold";
 }
 
+.defenderImg-start {
+    width: 30rem;
+    position: relative;
+    bottom: 4rem;
+    right: 20rem;
+}
+
 @media (max-width: 1300px) {
     .defender-start-textBox {
         left: 10rem;
-        width: 35rem;
+        width: 30rem;
+    }
+    .defenderImg-start {
+        width: 30rem;
+        bottom: 10rem;
+        right: 17rem;
+    }
+}
+@media (max-width: 1100px) {
+    .defenderImg-start {
+        width: 27rem;
+        right: 15rem;
     }
 }
 
@@ -39,6 +57,10 @@
     .defender-start-textBox {
         left: 10rem;
         width: 25rem;
+    }
+    .defenderImg-start {
+        width: 23rem;
+        right: 14rem;
     }
 }
 

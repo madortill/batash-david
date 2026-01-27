@@ -46,7 +46,7 @@ function AccidentDebrief({ changeToSection, changeToPage }) {
     changeToPage(0);
   };
   const nextPage = () => {
-    changeToPage(2);
+    changeToSection(5);
   };
   return (
     <div className="AccidentDebrief">

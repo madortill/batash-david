@@ -1,0 +1,49 @@
+.summary-text {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    width: 45rem;
+    text-align: start;
+    font-size: 1.8rem;
+    background-color: rgb(255, 255, 255);
+    padding: 2rem;
+    border-radius: 20px;
+    color: black;
+    white-space: pre-line;
+    line-height: 1.6;
+}
+
+.summary-title {
+    position: relative;
+    top: 5rem;
+    left: 18rem;
+}
+
+.nextBtnSummary {
+    z-index: 1;
+}
+
+.galSummary {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    z-index: 1;
+}
+
+
+@media (max-width: 1200px) {
+    .summary-title {
+        top: 7rem;
+        left: 15rem;
+    }
+    
+    .summary-text {
+        width: 38rem;
+        font-size: 1.6rem;
+
+        padding: 1.5rem;
+
+    }
+}

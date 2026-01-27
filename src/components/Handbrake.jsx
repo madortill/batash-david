@@ -45,7 +45,7 @@ function Handbrake({ changeToPage, startPage }) {
         />
         <p className="backBtnText">{backBtnText}</p>
       </div>
-      <p className="title title-highlixVideo">{title}</p>
+      <p className="title title-handBrake">{title}</p>
       {page == 0 && <p className="handbrake-text">{text}</p>}
       {page == 1 && (
         <div className="cards-grid">

@@ -3,6 +3,7 @@ import { useState } from "react";
 import "../style/Defender.css";
 import { useData } from "../context/DataContext";
 import backBtn from "../assets/images/backBtn.svg";
+import defenderImg from "../assets/images/david-img.jpg";
 
 function DefenderStart({ changeToSection, changeToPage }) {
   const { data } = useData();
@@ -35,6 +36,7 @@ function DefenderStart({ changeToSection, changeToPage }) {
         <p className="defender-start-text">{text1}</p>
         <p className="defender-start-text">{text2}</p>
       </div>
+      <img className="defenderImg-start" src={defenderImg} alt="defenderImg" />
       <button className="nextBtn" onClick={nextPage}>
         {nextBtn}
       </button>

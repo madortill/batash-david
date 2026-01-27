@@ -3,7 +3,7 @@ import "../style/Highlix.css";
 import { useData } from "../context/DataContext";
 import backBtn from "../assets/images/backBtn.svg";
 import doorFront from "../assets/images/door-outside.png";
-import doorBack from "../assets/images/door-outside.png";
+import doorBack from "../assets/images/doorBack.png";
 import galGalgal from "../assets/images/galGalgal.png";
 
 function HighlixDoors({ changeToPage, changeToSection }) {

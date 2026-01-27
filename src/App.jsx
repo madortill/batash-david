@@ -7,6 +7,7 @@ import Content from "./components/Content"
 
 import til from "./assets/images/til.svg";
 import bahad6 from "./assets/images/bahad6.png";
+import End from './components/End';
 
 function App() {
   const location = useLocation();
@@ -21,6 +22,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Start />} />  
         <Route path="/content" element={<Content />} />  
+        <Route path="/end" element={<End />} />  
       </Routes>
     </>
   )

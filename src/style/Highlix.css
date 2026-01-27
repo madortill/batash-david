@@ -135,6 +135,15 @@
     width: 30rem;
 }
 
+@media (max-width: 1300px) {
+    .hover-table-highlix {
+        position: relative;
+        top: 0rem;
+        right: 0rem;
+        width: 30rem;
+    }
+}
+
 /* SwitchBoard */
 
 .switch-img {
@@ -286,6 +295,12 @@
 
 .cards-grid>.flip-card:nth-child(5) {
     grid-column: 4 / span 2;
+}
+
+.title-handBrake {
+    position: relative;
+    top: 5rem;
+    left: 15rem;
 }
 
 /* CarSystem */
