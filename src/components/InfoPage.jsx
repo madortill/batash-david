@@ -11,6 +11,7 @@ import narrationNon from "../assets/images/narrationNon.svg";
 
 function InfoPage({ onSendData }) {
   const { data, switchJSON } = useData();
+  const [lang, setLang] = useState("he");
 
   const infoTitle = data.infoPage[0].text;
   const infoText = data.infoPage[1].text;
@@ -23,6 +24,12 @@ function InfoPage({ onSendData }) {
   const narrationExplain = data.infoPage[8].text;
   const backBtnText = data.general[0].text;
   const nextBtn = data.general[1].text;
+
+  const toggleLanguage = () => {
+    const nextLang = lang === "he" ? "en" : "he";
+    setLang(nextLang);
+    switchJSON(nextLang);
+  };
 
   const previousPage = () => {
     onSendData(0);
@@ -53,7 +60,7 @@ function InfoPage({ onSendData }) {
             </span>
           ))}
         </p>
-        <button className="languageBtn">{languageBtn}</button>
+        <button className="languageBtn" onClick={toggleLanguage}>{languageBtn}</button>
         <img src={galGalgal} alt="galGalgal" className="galGalgalInfo" />
         <div className="infoBtnContainer">
           <div className="infoBtnExplain">

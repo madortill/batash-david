@@ -614,7 +614,627 @@
         "End": [
             {
                 "btnText": "חזרה למארז",
-                "galSrc" : "images/galBubble/he/galEnd.svg",
+                "galSrc": "images/galBubble/he/galEnd.svg",
+                "warning": "images/he/end-warning.svg"
+            }
+        ]
+    },
+    "en": {
+        "general": [
+            {
+                "text": "Back",
+                "id": "backBtn"
+            },
+            {
+                "text": "Next",
+                "id": "nextBtn"
+            }
+        ],
+        "infoPage": [
+            {
+                "text": "Learning Instructions",
+                "id": "infoTitle"
+            },
+            {
+                "text": "To change language click this button:\nUse the menu to view topics and progress.\nMeet Gal the Wheel who will guide you with tips.\nYou can move forward and back using buttons.\nSome parts require completing actions first.",
+                "id": "infoText"
+            },
+            {
+                "text": "EN",
+                "id": "languageBtn"
+            },
+            {
+                "text": "Go Back"
+            },
+            {
+                "text": "Continue"
+            },
+            {
+                "text": "Follow instructions –\nNext is locked"
+            },
+            {
+                "text": "Continue with narration"
+            },
+            {
+                "text": "Continue without narration"
+            },
+            {
+                "text": "You can change this using the speaker icon"
+            }
+        ],
+        "welcomePage": [
+            {
+                "title": "Welcome to Training – Permit 36",
+                "text": "This training will help you learn the vehicle, its driving and maintenance. You will preserve the vehicle, prevent faults, and use it efficiently.",
+                "startBtn": "Let’s begin"
+            }
+        ],
+        "contentStart": [
+            {
+                "text": "Training Topics"
+            }
+        ],
+        "Introduction": [
+            {
+                "text": "The “David” vehicle is an armored jeep replacing the armored Sufa, available on two platforms:",
+                "note": "Hover over a card to learn about each vehicle"
+            },
+            {
+                "card1Title": "David Land Rover Defender",
+                "card1Text": "In service since 2006 in several models",
+                "card2Title": "David Toyota Hilux",
+                "card2Text": "In service since 2019 as a replacement, developed with improved mobility and reliability for armored weight"
+            },
+            {
+                "text": "The David jeep serves as a patrol, command, and combat vehicle.\nDeveloped in Israel by the IDF with MDT, mainly produced in the USA."
+            }
+        ],
+        "TechnicalData": [
+            {
+                "tableData": [
+                    [
+                        "Vehicle Name",
+                        "David Defender TD5 (2006)",
+                        "David Defender TD4 (2007)",
+                        "David Toyota Hilux"
+                    ],
+                    [
+                        "Engine Volume",
+                        "2.498 L (Turbo Diesel)",
+                        "2.402 L (Turbo Diesel)",
+                        "2.4 L (Turbo Diesel)"
+                    ],
+                    [
+                        "Power",
+                        "122 HP",
+                        "122 HP",
+                        "150 HP"
+                    ],
+                    [
+                        "Transmission",
+                        "Manual 5-speed",
+                        "Manual 6-speed",
+                        "Automatic 6-speed"
+                    ],
+                    [
+                        "Drive Type",
+                        "Permanent 4x4 with lockable center diff",
+                        "Permanent 4x4 with lockable center diff",
+                        "Rear wheel drive"
+                    ],
+                    [
+                        "Brake Systems",
+                        "ABS, ETC",
+                        "ABS, ETC",
+                        "ABS"
+                    ],
+                    [
+                        "Fuel Tank Capacity",
+                        "75 L (Diesel)",
+                        "75 L (Diesel)",
+                        "75 L (Diesel)"
+                    ],
+                    [
+                        "Max Speed",
+                        "By law, max 80 km/h",
+                        "By law, max 80 km/h",
+                        "By law, max 80 km/h"
+                    ],
+                    [
+                        "Air Pressure / PS",
+                        "Front 45, Rear 65",
+                        "Front 45, Rear 65",
+                        "Front 45, Rear 65"
+                    ],
+                    [
+                        "Curb Weight",
+                        "3350 kg",
+                        "3350 kg",
+                        "3840 kg"
+                    ],
+                    [
+                        "Payload",
+                        "550 kg",
+                        "550 kg",
+                        "520 kg"
+                    ],
+                    [
+                        "Gross Weight",
+                        "3900 kg",
+                        "3900 kg",
+                        "4360 kg"
+                    ]
+                ]
+            },
+            {
+                "text": "Pay attention to tire pressure and total weight!",
+                "img": "images/galBubble/he/galTechnical.svg",
+                "title": "Technical Data"
+            }
+        ],
+        "DefenderStart": [
+            {
+                "title": "David – Defender",
+                "semiTitle": "There are two main David models:",
+                "text1": "Patrol David – security vehicle for 4–5 soldiers.",
+                "text2": "Combat David (Light) – lighter armor allowing transport of 6 soldiers."
+            }
+        ],
+        "DefenderVideo": [
+            {
+                "title": "Transfer Case Operation",
+                "video": "videos/he/defenderVideo.mp4"
+            },
+            {
+                "galSrc": "images/galBubble/he/galDefenderVideo.svg",
+                "title1": "Transfer Case Function",
+                "text1": "The secondary gear lever allows selection between high and low range, with neutral between them. High range (H) is for normal driving and light off-road. Low range (L) is for high torque at low speed, such as steep climbs, descents, or difficult terrain.",
+                "title2": "Shifting Modes and Neutral Use",
+                "text2": "Neutral (N) disconnects power to the wheels and is used only for towing. When shifting, press the clutch and move step by step. If resistance occurs, do not force. Select second gear briefly, release the clutch, then retry. Choose the correct gear before driving."
+            }
+        ],
+        "DefenderTransfer": [
+            {
+                "title": "Transfer Case Operation",
+                "roadTitle": "Road Mode –",
+                "roadText": " Center differential unlocked",
+                "fieldTitle": "Off-road Mode –",
+                "fieldText": " Center differential locked",
+                "wheel1": "images/he/gearWheel1.svg",
+                "wheel2": "images/he/gearWheel2.svg",
+                "gal1": "images/galBubble/he/defenderTransfer1.svg",
+                "gal2": "images/galBubble/he/defenderTransfer2.svg",
+                "gal3": "images/galBubble/he/defenderTransfer3.svg"
+            }
+        ],
+        "DifrenzialChoose": [
+            {
+                "title": "Transfer Case – Differential Lock Selection",
+                "bubble": "images/he/pressMe-buble-he.svg",
+                "screens": [
+                    {
+                        "warningImg": "images/he/big-warning1.svg",
+                        "content": [
+                            {
+                                "parts": [
+                                    {
+                                        "type": "text",
+                                        "value": "The differential lock can be engaged or disengaged while stationary or driving at any speed.\nWhen moving, drive straight on firm ground without wheel slip."
+                                    }
+                                ]
+                            },
+                            {
+                                "parts": [
+                                    {
+                                        "type": "highlight",
+                                        "value": "Do not engage the differential lock from neutral."
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "warningImg": "images/he/big-warning1.svg",
+                        "content": [
+                            {
+                                "parts": [
+                                    {
+                                        "type": "text",
+                                        "value": "When should you use the differential lock? Usually only for "
+                                    },
+                                    {
+                                        "type": "bold",
+                                        "value": "off-road driving"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "value": " or slippery surfaces."
+                                    }
+                                ]
+                            },
+                            {
+                                "parts": [
+                                    {
+                                        "type": "text",
+                                        "value": "Always disengage the lock for normal driving when the vehicle is "
+                                    },
+                                    {
+                                        "type": "bold",
+                                        "value": "stopped"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "value": "."
+                                    }
+                                ]
+                            },
+                            {
+                                "parts": [
+                                    {
+                                        "type": "text",
+                                        "value": "If in doubt whether locking is needed, the rule is "
+                                    },
+                                    {
+                                        "type": "bold",
+                                        "value": "\"When in doubt – lock it\""
+                                    },
+                                    {
+                                        "type": "text",
+                                        "value": "."
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "DifrenzialWarning": [
+            {
+                "text1": "The amber indicator lights only when the differential lock is fully engaged, and turns off only after full disengagement.",
+                "text2": "Stuck Differential –",
+                "text3": "If the warning light stays on after disengagement, the differential may be stuck. Driving briefly in reverse and then forward usually releases it.",
+                "bubble": "images/he/pressMe-buble-he.svg",
+                "warningImg": "images/he/big-warning3.svg"
+            }
+        ],
+        "ChangeGear": [
+            {
+                "title": "Gear Selection by Driving Type",
+                "tableData": [
+                    [
+                        "Transfer Case",
+                        "Gearbox",
+                        "Driving Type"
+                    ],
+                    [
+                        "HIGH",
+                        "1 – 6",
+                        "• Normal driving\n• Sand, mud"
+                    ],
+                    [
+                        "LOW",
+                        "3 / 4 / 5",
+                        "• Sand, deep mud\n• Gravel\n• Dune sliding\n• Steep climbs"
+                    ],
+                    [
+                        "LOW",
+                        "2",
+                        "• Steep climbs\n• Recovery\n• Dune sliding"
+                    ],
+                    [
+                        "LOW",
+                        "1",
+                        "• Steep descents\n• Rocky climbs\n• Slow technical terrain"
+                    ]
+                ]
+            }
+        ],
+        "EmergencyStart": [
+            {
+                "title": "Emergency Start System",
+                "text1": "Vehicles from 2009 include an",
+                "text2": "emergency start system.",
+                "text3": "The system uses auxiliary batteries to start the vehicle if main batteries are depleted.\nIt is located under the front of the driver’s seat.",
+                "text4": "Emergency start system",
+                "text5": "is located under",
+                "text6": "the front of the driver’s seat.",
+                "gal1": "images/galBubble/he/galBubbleEmergency1.svg",
+                "gal2": "images/galBubble/he/galBubbleEmergency2.svg",
+                "gal3": "images/galBubble/he/galBubbleEmergency3.svg",
+                "gal4": "images/galBubble/he/galBubbleEmergency4.svg",
+                "gal5": "images/galBubble/he/galBubbleEmergency5.svg",
+                "startCar": "Start Vehicle"
+            }
+        ],
+        "EtcControl": [
+            {
+                "title": "ETC Traction Control System",
+                "ice1": "images/he/ice1.svg",
+                "ice2": "images/he/ice2.svg",
+                "ice3": "images/he/ice3.svg",
+                "ice4": "images/he/ice4.svg"
+            }
+        ],
+        "InnerLock": [
+            {
+                "title": "Internal Lock – Operational Use",
+                "text": "For operational driving, locking is performed per commander instruction.",
+                "bubble": "images/he/pressMe-buble-he.svg",
+                "bubbleRed": "images/galBubble/he/bubble-innerLock.svg"
+            }
+        ],
+        "BatteryPlace": [
+            {
+                "text": "The battery is located under the driver’s seat",
+                "bubble": "images/galBubble/he/battary-bubble.svg",
+                "bubble1": "images/galBubble/he/battary-bubble1.svg"
+            },
+            {
+                "text": "The battery is located under the driver’s seat"
+            }
+        ],
+        "DefenderEnd": [
+            {
+                "title": "General Operating Notes",
+                "text": "Lock the differential when changing a tire.\nWait for glow plug light to turn off before starting.\nDo not operate starter more than 30 seconds.\nWait 15 seconds before engine shutdown.\nDo not hold steering at full lock more than 3 seconds.",
+                "popUp": "Found fault – yellow"
+            }
+        ],
+        "HighlixStart": [
+            {
+                "title": "David – Toyota Hilux"
+            }
+        ],
+        "HighlixVideo": [
+            {
+                "title": "Transfer Case – Front Axle Engage / Disengage",
+                "video": "videos/he/highlixVideo.mp4"
+            },
+            {
+                "galSrc": "images/galBubble/he/galDefenderVideo.svg",
+                "title": "Transfer Case Operation",
+                "text": "To engage the front axle, stop the vehicle and shift to neutral (N).\nLift the switch and wait for the indicator light.\nIf engagement fails, shift to D, release brakes and roll slowly without throttle."
+            },
+            {
+                "galSrc": "images/galBubble/he/galHighlixVideo.svg"
+            }
+        ],
+        "FrontSeren": [
+            {
+                "title": "Front Axle Engage / Disengage",
+                "text": "• Red light off – right axle disconnected\n• Only then steep descent/ascent is allowed\n• Engage axle slowly until red light turns on\n• Disengage slowly until light turns off"
+            },
+            {
+                "tableData": [
+                    [
+                        "Mode",
+                        "4x4 Selector",
+                        "Front Axle Switch"
+                    ],
+                    [
+                        "Normal Road",
+                        "2H",
+                        "Disconnected"
+                    ],
+                    [
+                        "Steep Road",
+                        "4x4 LOW",
+                        "Disconnected"
+                    ],
+                    [
+                        "Off-road",
+                        "4x4 HIGH / LOW",
+                        "Engaged"
+                    ]
+                ]
+            }
+        ],
+        "SwitchBoard": [
+            {
+                "title": "Switch Panel",
+                "galSrc": "images/galBubble/he/galSwitches.svg",
+                "switches": [
+                    "images/he/switch6.png",
+                    "images/he/switch5.png",
+                    "images/he/switch4.png",
+                    "images/he/switch3.png",
+                    "images/he/switch2.png",
+                    "images/he/switch1.png"
+                ],
+                "switchesText": [
+                    {
+                        "title": "Flashing Light",
+                        "text": "Activate per mission order"
+                    },
+                    {
+                        "title": "Windshield Washer",
+                        "text": "Cleaning paint from windshield. Prep only."
+                    },
+                    {
+                        "title": "Ventilation Fan",
+                        "text": "Purifies troop cabin during fire. Operational use only."
+                    },
+                    {
+                        "title": "Cat Eye Lights",
+                        "text": "Night identification lights. Operational use only."
+                    },
+                    {
+                        "title": "Front Axle Disconnect",
+                        "text": "Engages / disengages front axle drive"
+                    },
+                    {
+                        "title": "Light Cutoff",
+                        "text": "Disables all vehicle lights. Operational use only."
+                    }
+                ]
+            }
+        ],
+        "Handbrake": [
+            {
+                "title": "Electric Parking Brake",
+                "text": "The electric brake supplements the mechanical brake and is mounted on the rear driveshaft.",
+                "cards": [
+                    {
+                        "front": "Activation",
+                        "back": "• Automatically activates with parking brake.\n• Indicator flashes then stays on.\n• Release flashes then turns off."
+                    },
+                    {
+                        "front": "Safety",
+                        "back": "• Ensure vehicle does not roll.\n• For towing only: can be released with 12V battery.\n• Do not remove connecting pin – injury risk."
+                    },
+                    {
+                        "front": "Parking",
+                        "back": "• Flat or slope up to 18% – brakes after 3 sec.\n• Above 18% – brakes after 8 sec."
+                    },
+                    {
+                        "front": "Driving Off",
+                        "back": "Vehicle can move 3 seconds after release."
+                    },
+                    {
+                        "front": "Possible Failure Causes",
+                        "back": "• Main power switch off.\n• Batteries disconnected or empty."
+                    }
+                ]
+            }
+        ],
+        "CarSystem": [
+            {
+                "title": "Vehicle Systems",
+                "galSrc": "images/galBubble/he/galSystem.svg",
+                "buttons": [
+                    {
+                        "id": 0,
+                        "title": "Main Power Disconnect",
+                        "title2": "Main Power and 24V System",
+                        "img": "images/place-img.png",
+                        "text": "Located in engine bay.\nTurn counterclockwise to shut down.\nTurn clockwise to power on."
+                    },
+                    {
+                        "id": 2,
+                        "title": "Rear AC Control",
+                        "title2": "Rear Air Conditioning",
+                        "img": "images/place-img.png",
+                        "text": "Located left of audio system.\nClockwise to activate.\nCounterclockwise to deactivate."
+                    },
+                    {
+                        "id": 1,
+                        "title": "24V Voltage Indicator",
+                        "title2": "24V Voltage Indicator",
+                        "img": "images/place-img.png",
+                        "text": "Located near gear lever.\nShows 24V system charge.\nDisplay appears above 24.2V."
+                    }
+                ]
+            }
+        ],
+        "Summary": [
+            {
+                "title": "Summary",
+                "galSrc": "images/galBubble/he/galSummary.svg",
+                "text1": "The “David” vehicle is not forgiving of driving errors.",
+                "text2": "Lack of experience increases risk, especially in extreme conditions.",
+                "text3": "Most accidents occur on roads at high speed.\nProper driving requires awareness.",
+                "text4": "The best way to reduce risk is slowing down,",
+                "text5": "which increases reaction time and control."
+            }
+        ],
+        "HighlixDoors": [
+            {
+                "title": "Vehicle Systems",
+                "galSrc": "images/galBubble/he/galDoors.svg",
+                "buttons": [
+                    {
+                        "id": 0,
+                        "title": "External Door Handle",
+                        "steps": [
+                            {
+                                "title": "External Door Handle",
+                                "img": "images/place-img.png",
+                                "text": "Located on the outside of the door.\nLocking the vehicle:\n• Insert the key and turn clockwise to lock the door.\nUnlocking the vehicle:\n• Insert the key and turn counterclockwise to unlock.\n• Press the button to open the door.\n• Note: Do not lock the doors while inside the vehicle."
+                            }
+                        ]
+                    },
+                    {
+                        "id": 1,
+                        "title": "Front Door Mechanism",
+                        "steps": [
+                            {
+                                "title": "Front Door Mechanism",
+                                "img": "images/place-img.png",
+                                "text": "Installed on all three vehicle doors.\nTo close the door:\n• Close gently until a click is heard.\nTo open the door:\n• Pull the handle upward and push the door outward."
+                            },
+                            {
+                                "title": "Front Door Latch",
+                                "img": "images/place-img.png",
+                                "text": "Exists only on the inner section of the front doors.\nEnsure the latch is secured before driving.\nTo lock the front door:\n• Push the latch down and rotate right or left until the T-handle locks.\nTo unlock the latch:\n• Push the latch down and rotate to release the T-handle."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "AccidentStart": [
+            {
+                "title": "Traffic Accidents and Vehicle Damage Debriefs"
+            }
+        ],
+        "AccidentDebrief": [
+            {
+                "galSrc": "images/galBubble/he/galAccident.svg",
+                "popups": {
+                    "bomb": {
+                        "steps": [
+                            {
+                                "title": "David vehicle after roadside bomb – Shechem 12.12.06 (No casualties)",
+                                "text": "Text...",
+                                "img": "images/bomb.png"
+                            }
+                        ]
+                    },
+                    "rocks": {
+                        "steps": [
+                            {
+                                "title": "Vehicle damage during operation in Kabetia (No casualties)",
+                                "text": "Text...",
+                                "img": "images/bomb.png"
+                            }
+                        ]
+                    },
+                    "mud": {
+                        "steps": [
+                            {
+                                "title": "Vehicle stuck during training on Beit Nir road",
+                                "text": "Text...",
+                                "img": "images/bomb.png"
+                            }
+                        ]
+                    },
+                    "flip": {
+                        "steps": [
+                            {
+                                "title": "Vehicle rollover – Judea–Hebron area (3.12.09)",
+                                "text": "Text 1",
+                                "img": "images/1.png"
+                            },
+                            {
+                                "title": "Vehicle rollover – Judea–Samaria area",
+                                "text": "Text 2",
+                                "img": "images/2.png"
+                            },
+                            {
+                                "title": "Vehicle rollover – Samaria area (30.11.09)",
+                                "text": "Text 3",
+                                "img": "images/3.png"
+                            }
+                        ]
+                    }
+                }
+            }
+        ],
+        "End": [
+            {
+                "btnText": "Back to Package",
+                "galSrc": "images/galBubble/he/galEnd.svg",
                 "warning": "images/he/end-warning.svg"
             }
         ]
