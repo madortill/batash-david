@@ -5,7 +5,6 @@ import { useData } from "../context/DataContext";
 import backBtn from "../assets/images/backBtn.svg";
 import DifrenzialLockSvg from "./DifrenzialLockSvg";
 import galGalgal from "../assets/images/galGalgal.png";
-import galBubble from "../assets/images/galBubble/he/DifrenzialLock-bubble.svg";
 import warningSign from "../assets/images/warning-sign.svg";
 
 function DifrenzialWarning({ changeToPage }) {
@@ -18,6 +17,7 @@ function DifrenzialWarning({ changeToPage }) {
   const text2 = data.DifrenzialWarning[0].text2;
   const text3 = data.DifrenzialWarning[0].text3;
   const bubble = data.DifrenzialWarning[0].bubble;
+  const galBubble = data.DifrenzialWarning[0].galBubble;
   const warningImg = data.DifrenzialWarning[0].warningImg;
   const previousPage = () => {
     changeToPage(4);

@@ -768,7 +768,7 @@
             },
             {
                 "text": "Pay attention to tire pressure and total weight!",
-                "img": "images/galBubble/he/galTechnical.svg",
+                "img": "images/galBubble/en/galTechnical.svg",
                 "title": "Technical Data"
             }
         ],
@@ -786,7 +786,7 @@
                 "video": "videos/he/defenderVideo.mp4"
             },
             {
-                "galSrc": "images/galBubble/he/galDefenderVideo.svg",
+                "galSrc": "images/galBubble/en/galDefenderVideo.svg",
                 "title1": "Transfer Case Function",
                 "text1": "The secondary gear lever allows selection between high and low range, with neutral between them. High range (H) is for normal driving and light off-road. Low range (L) is for high torque at low speed, such as steep climbs, descents, or difficult terrain.",
                 "title2": "Shifting Modes and Neutral Use",
@@ -800,20 +800,20 @@
                 "roadText": " Center differential unlocked",
                 "fieldTitle": "Off-road Mode –",
                 "fieldText": " Center differential locked",
-                "wheel1": "images/he/gearWheel1.svg",
-                "wheel2": "images/he/gearWheel2.svg",
-                "gal1": "images/galBubble/he/defenderTransfer1.svg",
-                "gal2": "images/galBubble/he/defenderTransfer2.svg",
-                "gal3": "images/galBubble/he/defenderTransfer3.svg"
+                "wheel1": "images/en/gearWheel1.svg",
+                "wheel2": "images/en/gearWheel2.svg",
+                "gal1": "images/galBubble/en/defenderTransfer1.svg",
+                "gal2": "images/galBubble/en/defenderTransfer2.svg",
+                "gal3": "images/galBubble/en/defenderTransfer3.svg"
             }
         ],
         "DifrenzialChoose": [
             {
                 "title": "Transfer Case – Differential Lock Selection",
-                "bubble": "images/he/pressMe-buble-he.svg",
+                "bubble": "images/en/pressMe-buble-he.svg",
                 "screens": [
                     {
-                        "warningImg": "images/he/big-warning1.svg",
+                        "warningImg": "images/en/big-warning1.svg",
                         "content": [
                             {
                                 "parts": [
@@ -834,7 +834,7 @@
                         ]
                     },
                     {
-                        "warningImg": "images/he/big-warning1.svg",
+                        "warningImg": "images/en/big-warning1.svg",
                         "content": [
                             {
                                 "parts": [
@@ -894,8 +894,9 @@
                 "text1": "The amber indicator lights only when the differential lock is fully engaged, and turns off only after full disengagement.",
                 "text2": "Stuck Differential –",
                 "text3": "If the warning light stays on after disengagement, the differential may be stuck. Driving briefly in reverse and then forward usually releases it.",
-                "bubble": "images/he/pressMe-buble-he.svg",
-                "warningImg": "images/he/big-warning3.svg"
+                "bubble": "images/en/pressMe-buble-he.svg",
+                "galBubble" : "images/galBubble/en/DifrenzialLock-bubble.svg",
+                "warningImg": "images/en/big-warning3.svg"
             }
         ],
         "ChangeGear": [
@@ -939,36 +940,36 @@
                 "text4": "Emergency start system",
                 "text5": "is located under",
                 "text6": "the front of the driver’s seat.",
-                "gal1": "images/galBubble/he/galBubbleEmergency1.svg",
-                "gal2": "images/galBubble/he/galBubbleEmergency2.svg",
-                "gal3": "images/galBubble/he/galBubbleEmergency3.svg",
-                "gal4": "images/galBubble/he/galBubbleEmergency4.svg",
-                "gal5": "images/galBubble/he/galBubbleEmergency5.svg",
+                "gal1": "images/galBubble/en/galBubbleEmergency1.svg",
+                "gal2": "images/galBubble/en/galBubbleEmergency2.svg",
+                "gal3": "images/galBubble/en/galBubbleEmergency3.svg",
+                "gal4": "images/galBubble/en/galBubbleEmergency4.svg",
+                "gal5": "images/galBubble/en/galBubbleEmergency5.svg",
                 "startCar": "Start Vehicle"
             }
         ],
         "EtcControl": [
             {
                 "title": "ETC Traction Control System",
-                "ice1": "images/he/ice1.svg",
-                "ice2": "images/he/ice2.svg",
-                "ice3": "images/he/ice3.svg",
-                "ice4": "images/he/ice4.svg"
+                "ice1": "images/en/ice1.svg",
+                "ice2": "images/en/ice2.svg",
+                "ice3": "images/en/ice3.svg",
+                "ice4": "images/en/ice4.svg"
             }
         ],
         "InnerLock": [
             {
                 "title": "Internal Lock – Operational Use",
                 "text": "For operational driving, locking is performed per commander instruction.",
-                "bubble": "images/he/pressMe-buble-he.svg",
-                "bubbleRed": "images/galBubble/he/bubble-innerLock.svg"
+                "bubble": "images/en/pressMe-buble-he.svg",
+                "bubbleRed": "images/galBubble/en/bubble-innerLock.svg"
             }
         ],
         "BatteryPlace": [
             {
                 "text": "The battery is located under the driver’s seat",
-                "bubble": "images/galBubble/he/battary-bubble.svg",
-                "bubble1": "images/galBubble/he/battary-bubble1.svg"
+                "bubble": "images/galBubble/en/battary-bubble.svg",
+                "bubble1": "images/galBubble/en/battary-bubble1.svg"
             },
             {
                 "text": "The battery is located under the driver’s seat"
@@ -992,12 +993,12 @@
                 "video": "videos/he/highlixVideo.mp4"
             },
             {
-                "galSrc": "images/galBubble/he/galDefenderVideo.svg",
+                "galSrc": "images/galBubble/en/galDefenderVideo.svg",
                 "title": "Transfer Case Operation",
                 "text": "To engage the front axle, stop the vehicle and shift to neutral (N).\nLift the switch and wait for the indicator light.\nIf engagement fails, shift to D, release brakes and roll slowly without throttle."
             },
             {
-                "galSrc": "images/galBubble/he/galHighlixVideo.svg"
+                "galSrc": "images/galBubble/en/galHighlixVideo.svg"
             }
         ],
         "FrontSeren": [
@@ -1033,14 +1034,14 @@
         "SwitchBoard": [
             {
                 "title": "Switch Panel",
-                "galSrc": "images/galBubble/he/galSwitches.svg",
+                "galSrc": "images/galBubble/en/galSwitches.svg",
                 "switches": [
-                    "images/he/switch6.png",
-                    "images/he/switch5.png",
-                    "images/he/switch4.png",
-                    "images/he/switch3.png",
-                    "images/he/switch2.png",
-                    "images/he/switch1.png"
+                    "images/en/switch6.png",
+                    "images/en/switch5.png",
+                    "images/en/switch4.png",
+                    "images/en/switch3.png",
+                    "images/en/switch2.png",
+                    "images/en/switch1.png"
                 ],
                 "switchesText": [
                     {
@@ -1101,7 +1102,7 @@
         "CarSystem": [
             {
                 "title": "Vehicle Systems",
-                "galSrc": "images/galBubble/he/galSystem.svg",
+                "galSrc": "images/galBubble/en/galSystem.svg",
                 "buttons": [
                     {
                         "id": 0,
@@ -1127,21 +1128,10 @@
                 ]
             }
         ],
-        "Summary": [
-            {
-                "title": "Summary",
-                "galSrc": "images/galBubble/he/galSummary.svg",
-                "text1": "The “David” vehicle is not forgiving of driving errors.",
-                "text2": "Lack of experience increases risk, especially in extreme conditions.",
-                "text3": "Most accidents occur on roads at high speed.\nProper driving requires awareness.",
-                "text4": "The best way to reduce risk is slowing down,",
-                "text5": "which increases reaction time and control."
-            }
-        ],
         "HighlixDoors": [
             {
                 "title": "Vehicle Systems",
-                "galSrc": "images/galBubble/he/galDoors.svg",
+                "galSrc": "images/galBubble/en/galDoors.svg",
                 "buttons": [
                     {
                         "id": 0,
@@ -1180,7 +1170,7 @@
         ],
         "AccidentDebrief": [
             {
-                "galSrc": "images/galBubble/he/galAccident.svg",
+                "galSrc": "images/galBubble/en/galAccident.svg",
                 "popups": {
                     "bomb": {
                         "steps": [
@@ -1231,11 +1221,22 @@
                 }
             }
         ],
+        "Summary": [
+            {
+                "title": "Summary",
+                "galSrc": "images/galBubble/en/galSummary.svg",
+                "text1": "The “David” vehicle is not forgiving of driving errors.",
+                "text2": "Lack of experience increases risk, especially in extreme conditions.",
+                "text3": "Most accidents occur on roads at high speed.\nProper driving requires awareness.",
+                "text4": "The best way to reduce risk is slowing down,",
+                "text5": "which increases reaction time and control."
+            }
+        ],
         "End": [
             {
                 "btnText": "Back to Package",
-                "galSrc": "images/galBubble/he/galEnd.svg",
-                "warning": "images/he/end-warning.svg"
+                "galSrc": "images/galBubble/en/galEnd.svg",
+                "warning": "images/en/end-warning.svg"
             }
         ]
     }
