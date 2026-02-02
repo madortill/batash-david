@@ -88,3 +88,10 @@
 .flip-card.flipped .flip-card-back {
     transform: rotateY(360deg);
 }
+
+@media (max-width: 1100px) {
+    .flip-card {
+        width: 16rem;
+    }
+    
+}

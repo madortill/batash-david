@@ -534,3 +534,20 @@
     position: relative;
     right: 35rem;
 }
+
+@media (max-width: 1200px) {
+    .galHighlixDoors {
+        right: 25rem;
+    }
+}
+@media (max-width: 1000px) {
+    .galHighlixDoors {
+        right: 20rem;
+    }
+    
+    .door-btn-img {
+        height: 28rem;
+        margin: 0rem 2rem;
+        cursor: pointer;
+    }
+}

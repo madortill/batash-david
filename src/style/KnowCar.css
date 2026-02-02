@@ -112,6 +112,16 @@
         right: 23rem;
     }
 }
+@media (max-width: 1050px) {
+    .hover-table {
+        width: 38rem;
+       right: -1rem;
+    }
+
+    .galTechnical {
+        right: 23.5rem;
+    }
+}
 
 @media (max-height: 950px) {
     .hover-table {

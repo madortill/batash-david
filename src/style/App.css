@@ -51,6 +51,7 @@ body {
 
 .symbols {
   position: absolute;
+  z-index: 4;
   top: 0.5rem;
   left: 0.5rem;
 }
@@ -62,6 +63,7 @@ body {
   font-family: rubik;
   src: url('/src/assets/fonts/Rubik/Rubik-Bold.ttf');
 }
+
 @font-face {
   font-family: rubik-black;
   src: url('/src/assets/fonts/Rubik/Rubik-Black.ttf');
@@ -76,10 +78,12 @@ body {
   font-family: assistant-bold;
   src: url('/src/assets/fonts/Assistant/Assistant-Bold.ttf');
 }
+
 @font-face {
   font-family: assistant-semiBold;
   src: url('/src/assets/fonts/Assistant/Assistant-SemiBold.ttf');
 }
+
 @font-face {
   font-family: assistant-extraBold;
   src: url('/src/assets/fonts/Assistant/Assistant-ExtraBold.ttf');
@@ -89,3 +93,5 @@ body {
   font-family: fredoka;
   src: url('/src/assets/fonts/Fredoka/Fredoka-Bold.ttf');
 }
+
+

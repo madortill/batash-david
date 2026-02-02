@@ -354,7 +354,7 @@
     width: 48rem;
     position: relative;
     top: 12rem;
-    right: 10rem;
+    right: 12rem;
 }
 
 .welcome-road {
@@ -405,6 +405,19 @@
     }
     .welcome-gal {
         right: 16rem;
+        top: 23rem;
+        height: 17rem;
+    }
+}
+@media (max-width: 1250px) {
+    .welcome-mainContent {
+        right: 29rem;
+    }
+    .welcome-road {
+        left: 18rem;
+    }
+    .welcome-gal {
+        right: 21rem;
         top: 23rem;
         height: 17rem;
     }

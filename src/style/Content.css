@@ -1,4 +1,3 @@
-
 /* contentStart */
 .svg-wrapper {
     position: relative;
@@ -14,18 +13,9 @@
     left: 10rem;
 }
 
-@media (max-width: 1200px) {
-    .svg-wrapper {
-        right: 7rem;
-    }
-}
 
 @media (max-width: 1000px) {
     .content-start-title {
         left: 7rem;
     }
-    .svg-wrapper {
-        right: 5rem;
-    }
 }
-

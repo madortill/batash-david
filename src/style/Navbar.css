@@ -23,6 +23,12 @@
     fill: rgba(20, 20, 20, .6);
 }
 
+.cls-text {
+    fill: #fff2b4;
+    font-family: "rubik";
+    font-size: 1.5rem;
+}
+
 .animation-start {
     animation: pulse 1.8s ease infinite;
     transition: transform 0.25s ease;
@@ -75,16 +81,17 @@
         bottom: 0.5rem;
         right: 0.5rem;
     }
-    
+
 }
+
 @media (max-width: 1000px) {
     .small-navbar {
         height: 20rem;
-    }  
+    }
 }
+
 @media (max-height: 800px) {
     .small-navbar {
         height: 20rem;
-    }  
+    }
 }
-

@@ -45,7 +45,7 @@ function StartPage({onSendData}) {
             <p className="list-text-about">רב"ט גילי נחום</p>
             <h3 className="list-text-about">מומחי תוכן:</h3>
             <p className="list-text-about">רס"ל עדן מאיר</p>
-            <p className="list-text-about">רנ"ג יוסי </p>
+            <p className="list-text-about">רנ"ג יוסי אלוני</p>
             <h3 className="list-text-about">רמ"ד טי"ל:</h3>
             <p className="list-text-about">רס"מ עדן בן חמו</p>
             <h3 className="list-text-about">גרסה:</h3>
