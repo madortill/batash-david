@@ -42,6 +42,7 @@ export const DataProvider = ({ children }) => {
         switchJSON,
         isNarrationOn,
         toggleNarration,
+        currentJSON,
         playAudio,
         stopAudio,
         currentJSON,
