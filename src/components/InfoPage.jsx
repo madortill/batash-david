@@ -20,8 +20,7 @@ function InfoPage({ onSendData }) {
   const nextBtnInfo = data.infoPage[4].text;
   const nextBtnDisableInfo = data.infoPage[5].text;
   const narrationText = data.infoPage[6].text;
-  const narrationNonText = data.infoPage[7].text;
-  const narrationExplain = data.infoPage[8].text;
+
   const backBtnText = data.general[0].text;
   const nextBtn = data.general[1].text;
 
@@ -90,18 +89,23 @@ function InfoPage({ onSendData }) {
             </p>
           </div>
         </div>
-          <div className="narrationContainer">
-            <button className="narrationBtnInfo" onClick={nextPage}>
-              <img src={narration} alt="narration" />
-              {narrationText}
-            </button>
-            <button className="narrationBtnInfo" onClick={nextPage}>
-              <img src={narrationNon} alt="narrationNon" />
-              {narrationNonText}
-            </button>
-          </div>
-          <p className="narrationExplain">{narrationExplain}</p>
+        <p className="info-text narrationText">{narrationText}</p>
+        <div className="narration-btn-container">
+        <button
+        className={`narration-toggle off narration-toggle-info`}
+      >
+        🔇 קריינות כבויה
+      </button>
+      <button
+        className={`narration-toggle on narration-toggle-info`}
+      >
+       🔊 קריינות פעילה
+      </button>
+        </div>
       </div>
+      <button className="nextBtn" onClick={nextPage}>
+        {nextBtn}
+      </button>
     </div>
   );
 }

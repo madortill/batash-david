@@ -94,4 +94,72 @@ body {
   src: url('/src/assets/fonts/Fredoka/Fredoka-Bold.ttf');
 }
 
+/* כפתור קריינות בסיסי */
+.narration-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  padding: 10px 13px;
+  border-radius: 12px;
+
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: #ffffff;
+  color: #111;
+
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+
+  cursor: pointer;
+  user-select: none;
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease, border-color 120ms ease;
+}
+
+/* Hover */
+.narration-toggle:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+  border-color: rgba(0, 0, 0, 0.18);
+}
+
+/* לחיצה */
+.narration-toggle:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+}
+
+/* נגישות - טבעת פוקוס */
+.narration-toggle:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.35), 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* מצב פעיל (ON) */
+.narration-toggle.on {
+  background: #073799; /* ירקרק */
+  opacity: 0.8;
+  border-color: #8094bb;
+  color: #FFF2B4;
+}
+
+/* מצב כבוי (OFF) */
+.narration-toggle.off {
+  background: rgba(199, 183, 183, 0.3); /* אדמדם */
+  border-color: rgba(0, 0, 0, 0.28);
+  color: #000000;
+}
+
+
+/* אופציונלי: כפתור צף קבוע בפינה */
+.narration-toggle.floating {
+  position: fixed;
+  top: 1rem;
+  left: 10rem; /* אם את רוצה ימין: right: 18px; ולבטל left */
+  z-index: 9999;
+}
+
 

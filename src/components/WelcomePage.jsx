@@ -1,12 +1,13 @@
 import React from "react";
 import "../style/Start.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Navigate, useNavigate } from "react-router-dom";
 import { useData } from "../context/DataContext";
 
 import backBtn from "../assets/images/backBtn.svg";
 import road from "../assets/images/road.svg";
 import galGalgal from "../assets/images/galGalgal.png";
+import welcomeAudioHe from "../assets/audio/WelcomePage.mp4";
 
 function WelcomePage({ onSendData }) {
   const { data } = useData();
@@ -14,6 +15,10 @@ function WelcomePage({ onSendData }) {
   const welcomeTitle = data.welcomePage[0].title;
   const welcomeText = data.welcomePage[0].text;
   const startBtn = data.welcomePage[0].startBtn;
+  const { playAudio } = useData();
+  useEffect(() => {
+    playAudio(welcomeAudioHe);
+  }, []);
 
   const previousPage = () => {
     onSendData(1);
