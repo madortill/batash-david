@@ -26,10 +26,10 @@ function StartPage({onSendData}) {
 
   return (
     <div className="StartPage">
-      <div className="backBtn" onClick={() => {
+      <div className="backBtn" >
+        <img src={backBtn} alt="backBtn" className="backBtnImg" onClick={() => {
           window.location.href = "https://madortill.github.io/batash-package/";
-        }}>
-        <img src={backBtn} alt="backBtn" className="backBtnImg" />
+        }} />
         <p className="backBtnText" >חזרה לבחירת הרכב</p>
       </div>
       <div onClick={toggleAbout} className="aboutBtnContainer">
