@@ -25,7 +25,15 @@ function End() {
           alt="galGalgal"
         />
       </div>
-      <button className="nextBtn nextBtnEnd">{btnText}</button>
+      <button
+        className="nextBtn nextBtnEnd"
+        onClick={() => {
+          console.log("hi");
+          window.location.href = "https://madortill.github.io/batash-package/";
+        }}
+      >
+        {btnText}
+      </button>
     </div>
   );
 }

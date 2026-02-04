@@ -9,7 +9,6 @@ import Defender from "./Defender";
 import Highlix from "./Highlix";
 import Accident from "./Accident";
 import Summary from "./Summary";
-import End from "./End";
 
 function Content() {
   const [section, setSection] = useState(0);
