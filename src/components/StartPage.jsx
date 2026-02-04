@@ -28,7 +28,9 @@ function StartPage({onSendData}) {
     <div className="StartPage">
       <div className="backBtn">
         <img src={backBtn} alt="backBtn" className="backBtnImg" />
-        <p className="backBtnText">חזרה לבחירת הרכב</p>
+        <p className="backBtnText" onClick={() => {
+          window.location.href = "https://madortill.github.io/batash-package/";
+        }}>חזרה לבחירת הרכב</p>
       </div>
       <div onClick={toggleAbout} className="aboutBtnContainer">
         <button className="about-btn">
@@ -49,7 +51,7 @@ function StartPage({onSendData}) {
             <h3 className="list-text-about">רמ"ד טי"ל:</h3>
             <p className="list-text-about">רס"מ עדן בן חמו</p>
             <h3 className="list-text-about">גרסה:</h3>
-            <p className="list-text-about">דצמבר 2025</p>
+            <p className="list-text-about">פברואר 2026</p>
           </>
         )}
       </div>
