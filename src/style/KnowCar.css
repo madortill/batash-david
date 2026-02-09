@@ -81,6 +81,14 @@
     font-weight: bold;
 }
 
+.hover-table tr.highlight-row td {
+    background-color: #FFE6CC; /* דוגמה – תשני לצבע שתרצי */
+}
+
+.hover-table tr.highlight-row td:hover {
+    background-color: #FFD28A;
+}
+
 .galBubble {
     display: flex;
     flex-direction: column;

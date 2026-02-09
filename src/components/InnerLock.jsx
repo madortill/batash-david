@@ -6,7 +6,6 @@ import backBtn from "../assets/images/backBtn.svg";
 import galGalgal from "../assets/images/galGalgal.png";
 import warningSign from "../assets/images/warning-sign.svg";
 import lockImg from "../assets/images/lock-img.svg";
-import lockImg1 from "../assets/images/lock-img1.svg";
 
 function InnerLock({changeToPage}) {
     const [page, setPage] = useState(0);
@@ -37,7 +36,7 @@ function InnerLock({changeToPage}) {
       <p className="innerLockTitle title">{title}</p>
       <div className="lock-container">
       <img src={lockImg} alt="lockImg" className="innerLock-img" />
-      <img src={lockImg1} alt="lockImg1" className="innerLock-img" />
+      
       </div>
       <p className="innerLock-text">{text}</p>
       {page == 0 && <div className="innerLockWarningSign-container">

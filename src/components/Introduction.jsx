@@ -7,6 +7,8 @@ import FlipCard from "./FlipCard";
 import backBtn from "../assets/images/backBtn.svg";
 import toyotaLogo from "../assets/images/toyotaLogo.svg";
 import defenderLogo from "../assets/images/defenderLogo.svg";
+import madat1 from "../assets/images/mdt1.jpeg";
+import madat2 from "../assets/images/mdt2.jpeg";
 
 function Introduction({ onSendData, startPage }) {
   const [page, setPage] = useState(startPage);
@@ -39,12 +41,12 @@ function Introduction({ onSendData, startPage }) {
 
   const cards = [
     {
-      img: toyotaLogo,
+      img: defenderLogo,
       frontText: data.Introduction[1].card1Title,
       backText: data.Introduction[1].card1Text,
     },
     {
-      img: defenderLogo,
+      img: toyotaLogo,
       frontText: data.Introduction[1].card2Title,
       backText: data.Introduction[1].card2Text,
     },
@@ -93,6 +95,8 @@ function Introduction({ onSendData, startPage }) {
         {page === 1 && (
           <div className="intro-second">
             <p className="intro-text-sec">{introText2}</p>
+            <img className="madat-img" src={madat1} alt="madat1" />
+            <img className="madat-img" src={madat2} alt="madat2" />
           </div>
         )}
       </div>

@@ -177,9 +177,9 @@
             {
                 "galSrc": "images/galBubble/he/galDefenderVideo.svg",
                 "title1": "תפקיד תיבת ההעברה",
-                "text1": "ידית ההילוכים המשנית, או תיבת העברה, מאפשרת בחירה בין טווח הילוכים גבוה לטווח נמוך, וביניהם קיים גם מצב סרק. הטווח הגבוה (H) מיועד לנהיגה רגילה בתנאי דרך שגרתיים וגם לנסיעה בשטח קל, על קרקע יבשה ומישורית. הטווח הנמוך (L), לעומת זאת, משמש במצבים שבהם נדרש כוח רב יותר במהירויות נמוכות – כמו תמרון איטי, נסיעה בשטח קשה, טיפוס או ירידה תלולה, או בכל מצב שבו הרכב מתקשה להתקדם בטווח הגבוה.",
+                "text1": "ידית ההילוכים המשנית (תיבת העברה) מאפשרת לבחור את אופן העברת הכוח בהתאם לתנאי הדרך: \n H – טווח גבוה לנהיגה רגילה בכביש ובשטח קל, על קרקע יבשה ומישורית. \n N – סרק מצב ניתוק בין המנוע לגלגלים. \n L – טווח נמוך לשימוש במהירויות נמוכות כאשר נדרש כוח רב: שטח קשה, תמרון איטי, טיפוס או ירידה תלולה, או כאשר הרכב מתקשה להתקדם ב־H.",
                 "title2": "מעבר בין המצבים ושימוש במצב סרק",
-                "text2": "מצב הסרק (N) מנתק את העברת הכוח מהמנוע לגלגלים, ולכן משתמשים בו רק בעת גרירה. בעת מעבר בין המצבים יש ללחוץ על המצמד ולהעביר את הידית בשלבים: מ־H ל־N ומשם ל־L, או בכיוון ההפוך. אם קיימת התנגדות בעת שילוב ממצב סרק לטווח גבוה או נמוך, אין להפעיל כוח. במצב כזה, כשהמצמד עדיין לחוץ והתיבה המשנית בניוטרל, משלבים להילוך שני בתיבת ההילוכים הראשית, משחררים את המצמד לרגע קצר, לוחצים שוב ומנסים לשלב מחדש. לפני תחילת הנסיעה חשוב לבחור בתיבת ההילוכים הראשית את ההילוך המתאים לתנאי הדרך."
+                "text2": "מצב סרק (N) מנתק את העברת הכוח מהמנוע לגלגלים ומשמש לגרירה בלבד. \n מעבר בין מצבי תיבת ההעברה: \n 1. לחץ על המצמד. \n 2. העבר את הידית בשלבים: H ⇄ N ⇄ L. \n 3. אם יש התנגדות – אין להפעיל כוח. \n במקרה של קושי בשילוב: \n כשהמצמד לחוץ והתיבה ב־N: שלב להילוך שני, שחרר מצמד לרגע קצר, לחץ שוב ונסה לשלב מחדש. \n לפני תחילת נסיעה: \n בחר הילוך מתאים בתיבת ההילוכים הראשית."
             }
         ],
         "DefenderTransfer": [
@@ -223,7 +223,7 @@
                         ]
                     },
                     {
-                        "warningImg": "images/he/big-warning1.svg",
+                        "warningImg": "images/he/big-warning2.svg",
                         "content": [
                             {
                                 "parts": [
@@ -544,7 +544,7 @@
                             },
                             {
                                 "title": "בריח לדלת קדמית",
-                                "img": "images/place-img.png",
+                                "img": "images/door-lock.jpeg",
                                 "text": "קיים רק בחלק האמצעי של הדלתות הקדמיות. \n יש לוודא סגירת הבריח טרם תנועת הרכב. \n לנעילת הדלת הקדמית: \n  • דחוף את הבריח למטה וסובב ימינה או שמאלה עד לנעילת זרוע ה-T. \n לפתיחת הבריח: \n • דחוף את הבריח למטה וסובב לשחרור זרוע ה- T."
                             }
                         ]
@@ -807,9 +807,9 @@
             {
                 "galSrc": "images/galBubble/en/galDefenderVideo.svg",
                 "title1": "Transfer Case Function",
-                "text1": "The secondary gear lever allows selection between high and low range, with neutral between them. High range (H) is for normal driving and light off-road. Low range (L) is for high torque at low speed, such as steep climbs, descents, or difficult terrain.",
+                "text1": "The secondary gear lever (transfer case) allows selection of the power transmission mode according to driving conditions: \n H – High range for normal driving on paved roads and light off-road terrain, on dry and level ground. \n N – Neutral, a disengaged state between the engine and the wheels. \n L – Low range for low-speed driving when increased power is required: difficult terrain, slow maneuvering, steep ascents or descents, or when the vehicle struggles to move in H.",
                 "title2": "Shifting Modes and Neutral Use",
-                "text2": "Neutral (N) disconnects power to the wheels and is used only for towing. When shifting, press the clutch and move step by step. If resistance occurs, do not force. Select second gear briefly, release the clutch, then retry. Choose the correct gear before driving."
+                "text2": "Neutral (N) disengages power transmission from the engine to the wheels and is used for towing only. \n Shifting between transfer case modes: \n 1. Depress the clutch. \n 2. Shift the lever gradually: H ⇄ N ⇄ L. \n 3. If resistance is felt – do not apply force. \n In case of difficulty engaging a mode: \n With the clutch depressed and the transfer case in N: shift into second gear in the main gearbox, briefly release the clutch, depress it again, and attempt to re-engage. \n Before starting to drive: \n Select the appropriate gear in the main gearbox according to road conditions."
             }
         ],
         "DefenderTransfer": [

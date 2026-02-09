@@ -13,7 +13,7 @@ function TechnicalData({ setPage, changeToSection }) {
   const technicalTitle = data.TechnicalData[1].title;
 
   const previousPage = () => {
-    setPage(0)
+    setPage(0);
   };
 
   const nextPage = () => {
@@ -35,14 +35,17 @@ function TechnicalData({ setPage, changeToSection }) {
       <table className="hover-table">
         <tbody>
           {tableData.map((row, rowIdx) => (
-            <tr key={rowIdx}>
+            <tr
+              key={rowIdx}
+              className={rowIdx >= 6 && rowIdx <= 8 ? "highlight-row" : ""}
+            >
               {row.map((cellText, colIdx) => (
                 <td
                   key={colIdx}
                   className={`
-                    ${rowIdx === 0 ? "first-row" : ""}
-                    ${rowIdx === 0 || colIdx === 0 ? "bold-cell" : ""}
-                  `}
+              ${rowIdx === 0 ? "first-row" : ""}
+              ${rowIdx === 0 || colIdx === 0 ? "bold-cell" : ""}
+            `}
                 >
                   {cellText}
                 </td>
@@ -52,7 +55,11 @@ function TechnicalData({ setPage, changeToSection }) {
         </tbody>
       </table>
       <div className="galTechnical galBubble">
-        <img src={data.TechnicalData[1].img} className="galTechnicalBubble" alt="galTechnicalBubble" />
+        <img
+          src={data.TechnicalData[1].img}
+          className="galTechnicalBubble"
+          alt="galTechnicalBubble"
+        />
         <img className="galTechnicalImg" src={galGalgal} alt="galGalgal" />
       </div>
       <button className="nextBtn" onClick={nextPage}>

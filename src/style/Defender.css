@@ -35,6 +35,11 @@
     right: 20rem;
 }
 
+.madat-img {
+    height: 13rem;
+    margin: 0rem 1rem;
+}
+
 @media (max-width: 1300px) {
     .defender-start-textBox {
         left: 10rem;
@@ -45,6 +50,11 @@
         bottom: 10rem;
         right: 17rem;
     }
+    .madat-img {
+        height: 10rem;
+        margin: 0rem 0.5rem;
+    }
+    
 }
 @media (max-width: 1100px) {
     .defenderImg-start {
@@ -106,6 +116,7 @@
     padding: 1rem;
     border-radius: 20px;
     color: black;
+    white-space: pre-line;
 }
 
 .defender-video-text-title {
