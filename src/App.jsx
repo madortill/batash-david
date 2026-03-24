@@ -20,14 +20,14 @@ function App() {
       </div>
 
       {/* 🎧 כפתור קריינות – רק בעברית */}
-      {currentJSON === "he" && (
+      {/* {currentJSON === "he" && (
         <button
           className={`narration-toggle floating ${isNarrationOn ? "on" : "off"}`}
           onClick={toggleNarration}
         >
           {isNarrationOn ? "🔊 קריינות פעילה" : "🔇 קריינות כבויה"}
         </button>
-      )}
+      )} */}
 
       <Routes>
         <Route path="/" element={<Start />} />

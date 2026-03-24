@@ -59,7 +59,7 @@ function InfoPage({ onSendData }) {
             </span>
           ))}
         </p>
-        <button className="languageBtn" onClick={toggleLanguage}>{languageBtn}</button>
+        {/* <button className="languageBtn" onClick={toggleLanguage}>{languageBtn}</button> */}
         <img src={galGalgal} alt="galGalgal" className="galGalgalInfo" />
         <div className="infoBtnContainer">
           <div className="infoBtnExplain">
@@ -89,7 +89,7 @@ function InfoPage({ onSendData }) {
             </p>
           </div>
         </div>
-        <p className="info-text narrationText">{narrationText}</p>
+        {/* <p className="info-text narrationText">{narrationText}</p>
         <div className="narration-btn-container">
         <button
         className={`narration-toggle off narration-toggle-info`}
@@ -101,7 +101,7 @@ function InfoPage({ onSendData }) {
       >
        🔊 קריינות פעילה
       </button>
-        </div>
+        </div> */}
       </div>
       <button className="nextBtn" onClick={nextPage}>
         {nextBtn}
