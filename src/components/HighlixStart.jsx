@@ -3,6 +3,7 @@ import { useData } from "../context/DataContext";
 import { useState } from "react";
 import "../style/Highlix.css";
 import backBtn from "../assets/images/backBtn.svg";
+import highlixImg from "../assets/images/highlixImg.png";
 
 function HighlixStart({changeToSection, changeToPage}) {
     const { data } = useData();
@@ -27,6 +28,7 @@ function HighlixStart({changeToSection, changeToPage}) {
         <p className="backBtnText">{backBtnText}</p>
       </div>
       <p className='title title-highlix'>{title}</p>
+      <img src={highlixImg} alt="highlixImg" className='highlixStartImg' />
       <button
         className="nextBtn"
         onClick={nextPage}

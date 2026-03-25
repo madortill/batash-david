@@ -6,6 +6,8 @@ import backBtn from "../assets/images/backBtn.svg";
 import galGalgal from "../assets/images/galGalgal.png";
 import driverSeat from "../assets/images/driverSeat.svg";
 import battery from "../assets/images/battery-img.svg";
+import batteryImg1 from "../assets/images/battery1.jpg";
+import batteryImg2 from "../assets/images/battery2.jpg";
 
 function BatteryPlace({changeToPage}) {
     const [page, setPage] = useState(0);
@@ -47,6 +49,8 @@ function BatteryPlace({changeToPage}) {
       </div>}
       {page == 2 && <div className='batteyExplain'>
         <p>{text}</p>
+        <img src={batteryImg1} className='batteryImg' alt="battery-img" />
+        <img src={batteryImg2} className='batteryImg' alt="batteryImg" />
         </div>}
       <button
         className={`nextBtn ${page === 2 ? "" : "nextBtnDisable"}`}

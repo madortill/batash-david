@@ -97,12 +97,10 @@ function HighlixDoors({ changeToPage, changeToSection }) {
             <p>{buttons[activeButton].steps[modalStep].text}</p>
 
             {buttons[activeButton].steps[modalStep].img && (
-              <div className="door-image-placeholder">
-                <img
+                <img className="door-image"
                   src={buttons[activeButton].steps[modalStep].img}
                   alt={buttons[activeButton].steps[modalStep].title}
                 />
-              </div>
             )}
           </div>
 

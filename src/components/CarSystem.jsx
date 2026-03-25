@@ -97,11 +97,12 @@ function CarSystem({ changeToPage }) {
           <h3>{buttons[activeButton].title2}</h3>
 
           <div className="system-text-content">
-            <p>{buttons[activeButton].text}</p>
             <img
+            className="system-text-box-img"
               src={buttons[activeButton].img}
               alt={buttons[activeButton].title2}
             />
+            <p>{buttons[activeButton].text}</p>
             {/* Placeholder לתמונה */}
             {/* <div className="system-image-placeholder">תמונה</div> */}
           </div>

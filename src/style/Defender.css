@@ -803,6 +803,11 @@
     width: 16rem;
 }
 
+.batteryImg {
+    width: 14rem;
+    margin: 1rem;
+}
+
 .batteyExplain {
     color: #fff;
     background-color: #323232;

@@ -4,6 +4,7 @@
     left: 22rem;
 }
 
+
 @media (max-width: 1400px) {
     .title-highlix {
         left: 15rem;
@@ -16,6 +17,11 @@
     }
 }
 
+.highlixStartImg {
+width: 40rem;
+position: relative;
+top: 8rem;
+}
 /* HighlixVideo */
 
 .title-highlixVideo {
@@ -23,6 +29,7 @@
     top: 5rem;
     left: 14rem;
 }
+
 
 .highlix-video-text-container {
     position: absolute;
@@ -261,6 +268,19 @@
 
 /* Handbrake */
 
+.handbrake-firstPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    position: relative;
+    top: 10rem
+}
+
+.handbrakeImg {
+    width: 17rem;
+
+}
 
 .handbrake-text {
     color: #000;
@@ -270,10 +290,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    position: relative;
-    top: 15rem;
     width: 30rem;
-    right: 10rem;
 }
 
 .cards-grid {
@@ -347,6 +364,10 @@
     z-index: 100;
     text-align: right;
     white-space: pre-line;
+}
+
+.system-text-box-img {
+    width: 10rem;
 }
 
 /* כפתור סגירה */
@@ -533,6 +554,10 @@
 .door-steps-next {
     position: relative;
     right: 35rem;
+}
+
+.door-image {
+    width: 15rem;
 }
 
 @media (max-width: 1200px) {

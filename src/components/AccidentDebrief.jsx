@@ -10,6 +10,7 @@ function AccidentDebrief({ changeToSection, changeToPage }) {
   const TARGETS = ["bomb", "rocks", "mud", "flip"];
   const [clickedItems, setClickedItems] = useState([]);
   const allClicked = clickedItems.length === TARGETS.length;
+
   const handleItemClick = (id) => {
     if (!clickedItems.includes(id)) {
       setClickedItems((prev) => [...prev, id]);
@@ -19,35 +20,44 @@ function AccidentDebrief({ changeToSection, changeToPage }) {
     setModalStep(0);
     setHasReachedLastStep(false);
   };
+
   useEffect(() => {
     clickedItems.forEach((id) => {
       const el = document.querySelector(`g[data-id="${id}"]`);
       if (el) el.classList.add("disabled");
     });
   }, [clickedItems]);
+
   const { data } = useData();
   const nextBtn = data.general[1].text;
   const backBtnText = data.general[0].text;
   const galSrc = data.AccidentDebrief[0].galSrc;
-  const [activeTarget, setActiveTarget] = useState(null); // איזה אזור פתוח
-  const [modalStep, setModalStep] = useState(0); // שלב בחלון
+
+  const [activeTarget, setActiveTarget] = useState(null);
+  const [modalStep, setModalStep] = useState(0);
   const [hasReachedLastStep, setHasReachedLastStep] = useState(false);
+
   const steps =
     activeTarget !== null
       ? data.AccidentDebrief[0].popups[activeTarget].steps
       : [];
+
+  const currentStep = steps[modalStep] || {};
 
   const hasMultipleSteps = steps.length > 1;
   const isLastStep = modalStep === steps.length - 1;
 
   const showCloseButton =
     activeTarget !== null && (!hasMultipleSteps || hasReachedLastStep);
+
   const previousPage = () => {
     changeToPage(0);
   };
+
   const nextPage = () => {
     changeToSection(5);
   };
+
   return (
     <div className="AccidentDebrief">
       <div className="backBtn">
@@ -59,6 +69,7 @@ function AccidentDebrief({ changeToSection, changeToPage }) {
         />
         <p className="backBtnText">{backBtnText}</p>
       </div>
+
       <div className="AccidentSvg-wrapper">
         <AccidentSvg
           onClick={(e) => {
@@ -71,16 +82,19 @@ function AccidentDebrief({ changeToSection, changeToPage }) {
           className="accident-svg"
         />
       </div>
+
       <div className="galAccidentDebrief galBubble">
         <img src={galSrc} className="galTechnicalBubble" alt="galBubble" />
         <img className="galTechnicalImg" src={galGalgal} alt="galGalgal" />
       </div>
+
       <button
         className={`nextBtn ${allClicked ? "" : "nextBtnDisable"}`}
         onClick={allClicked ? nextPage : undefined}
       >
         {nextBtn}
       </button>
+
       {activeTarget !== null && (
         <>
           <div className="blur-background" />
@@ -99,12 +113,23 @@ function AccidentDebrief({ changeToSection, changeToPage }) {
               </button>
             )}
 
-            <h3>{steps[modalStep].title}</h3>
+            <h3>{currentStep.title}</h3>
 
             <div className="modal-content">
-              <p>{steps[modalStep].text}</p>
-              {steps[modalStep].img && (
-                <img src={steps[modalStep].img} alt="" />
+              {currentStep.text && <p>{currentStep.text}</p>}
+
+
+              {currentStep.images && currentStep.images.length > 0 && (
+                <div className={`modal-images images-${currentStep.images.length}`}>
+                  {currentStep.images.map((image, index) => (
+                    <img
+                      key={index}
+                      src={image}
+                      alt={`${currentStep.title || "popup"} ${index + 1}`}
+                      className="modal-image"
+                    />
+                  ))}
+                </div>
               )}
             </div>
 

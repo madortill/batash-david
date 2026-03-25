@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../style/Highlix.css";
 import { useData } from "../context/DataContext";
 import backBtn from "../assets/images/backBtn.svg";
+import handbrakeImg from "../assets/images/handBrakeImg.svg";
 import FlipCard from "./FlipCard";
 
 function Handbrake({ changeToPage, startPage }) {
@@ -46,7 +47,10 @@ function Handbrake({ changeToPage, startPage }) {
         <p className="backBtnText">{backBtnText}</p>
       </div>
       <p className="title title-handBrake">{title}</p>
-      {page == 0 && <p className="handbrake-text">{text}</p>}
+     {page == 0 && <div className="handbrake-firstPage">
+      <img src={handbrakeImg} alt="handbrakeImg" className="handbrakeImg" />
+       <p className="handbrake-text">{text}</p>
+      </div>}
       {page == 1 && (
         <div className="cards-grid">
           {cards.map((card, index) => (
