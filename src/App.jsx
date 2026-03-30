@@ -8,12 +8,14 @@ import End from "./components/End";
 
 import til from "./assets/images/til.svg";
 import bahad6 from "./assets/images/bahad6.png";
+import MobileWarningOverlay from './components/MobileWarningOverlay';
 
 function App() {
   const { isNarrationOn, toggleNarration, currentJSON } = useData();
 
   return (
     <>
+    <MobileWarningOverlay />
       <div className="symbols">
         <img src={bahad6} alt="bahad6" className="bahad6" />
         <img src={til} alt="til" className="til" />
