@@ -880,23 +880,30 @@
 
 .defenderEnd-info-box {
     position: absolute;
-    top: 15rem;
+    top: 14rem;
     left: 0.5rem;
     background-color: #f5a623;
     border: 2px solid #FFF2B4;
     border-radius: 0.3rem;
-    padding: 0.8rem 1.2rem;
+    padding: 0.5rem 1rem;
     font-size: 1.2rem;
     color: #FFF2B4;
     white-space: nowrap;
     animation: infoFadeIn 0.25s ease;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     font-family: "assistant-bold";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .defenderEnd-car {
     height: 5rem;
     margin-top: 2rem;
+}
+
+.lahatPop {
+    width: 5rem;
 }
 
 

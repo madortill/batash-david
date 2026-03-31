@@ -18,10 +18,20 @@
 }
 
 .highlixStartImg {
-width: 40rem;
-position: relative;
-top: 8rem;
+    max-width: 20rem;
+    max-height: 20rem;
 }
+
+.highlixStartImgContainer {
+    max-width: 50rem;
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    position: relative;
+    top: 8rem;
+}
+
 /* HighlixVideo */
 
 .title-highlixVideo {
@@ -565,11 +575,12 @@ top: 8rem;
         right: 25rem;
     }
 }
+
 @media (max-width: 1000px) {
     .galHighlixDoors {
         right: 20rem;
     }
-    
+
     .door-btn-img {
         height: 28rem;
         margin: 0rem 2rem;

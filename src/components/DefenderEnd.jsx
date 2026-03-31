@@ -4,6 +4,7 @@ import { useState } from "react";
 import "../style/Defender.css";
 import backBtn from "../assets/images/backBtn.svg";
 import carFront from "../assets/images/carFront-img.svg";
+import imgPop from "../assets/images/lahat.png";
 
 function DefenderEnd({changeToSection, changeToPage}) {
   const [pressedInfo, setPressedInfo] = useState(false);
@@ -48,6 +49,7 @@ function DefenderEnd({changeToSection, changeToPage}) {
         {isOpen && (
           <div className="defenderEnd-info-box">
             <p>{popUp}</p>
+            <img src={imgPop} alt="imgPop" className="lahatPop" />
           </div>
         )}
         <img className="defenderEnd-car" src={carFront} alt="carFront" />
